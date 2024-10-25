@@ -1,0 +1,528 @@
+body{
+    background:rgb(247, 238, 238);
+    font: size 20px;
+    
+}
+
+.video-background{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+
+.watoto-logo img{
+    max-width:200px;
+    height:auto;
+    position:absolute;
+    top: 15px;
+    left:15px;
+    z-index:2;
+    
+}
+.watoto-video{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    position:absolute;
+    top:0;
+    left:0;  
+}
+.video-text{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+    z-index: 2;
+    width:80%;
+}
+
+.outreach-tile{
+    background-image:url('/photos/light-grey-maji-kwa-watoto-foundation1.png');
+    background-size: cover;
+    overflow:hidden;
+    margin-right:10px;
+    /* width:400px; */
+    width: 32%;
+    height:300px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the h2 and a tag vertically */
+
+}
+.outreach-tile h2{
+ position: relative;
+ margin-bottom: 20px;
+ font-size: 50px;
+ z-index: 2;
+ color: white;
+}
+.outreach-tile a{
+  position: relative;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 2; 
+  text-decoration: none;
+}
+.outreach-tile a p{
+    margin: 0;
+}
+.impact-tile{
+    background-image:url('/photos/light-grey-maji-kwa-watoto-foundation1.png');
+    background-size: cover;
+    overflow:hidden;
+    margin-right:10px;
+    /* width:400px; */
+    width: 32%;
+    height:300px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the h2 and a tag vertically */
+
+}
+.impact-tile h2{
+ position: relative;
+ margin-bottom: 20px;
+ font-size: 50px;
+ z-index: 2;
+ color: white;
+}
+.impact-tile a{
+  position: relative;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 2;
+  text-decoration: none;
+}
+.impact-tile a p{
+    margin: 0;
+}
+.involved-tile{
+    background-image:url('/photos/children-and-visitors-maji-kwa-watoto-foundation.jpeg');
+    background-size: cover;
+    overflow:hidden;
+    width: 32%;
+    height:300px;
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column; /* Stack the h2 and a tag vertically */
+
+}
+.involved-tile h2{
+ position: relative;
+ margin-bottom: 20px;
+ font-size: 50px;
+ z-index: 2;
+ color: white;
+}
+.involved-tile a{
+  position: relative;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 2; 
+  text-decoration: none;
+}
+.involved-tile a p{
+    margin: 0;
+}
+.happening-next{
+    position:relative;
+}
+/* .happening-next-wrp{
+    
+} */
+.heading-next{
+    width:700px;
+    height:100px;
+    text-align:center;
+    background-color: #007BFF;
+    color:white;
+    display:flex;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    animation: tick-tock 1s ease-in-out infinite; /* Applies animation */
+}
+.heading-next h2{
+    text-align:center;
+    margin:0;
+}
+@keyframes tick-tock {
+  0%, 100% {
+      transform: scale(1); /* Normal size */
+  }
+  50% {
+      transform: scale(1.05); /* Slightly larger for "tick" */
+  }
+}
+
+
+
+
+.tiles-next {
+    gap: 10px; /* Adds space between the tiles */
+  }
+  
+  .t-next-1 {
+    flex: 0 0 70%; /* Takes 70% of the available width */
+    position:relative;
+    /* align-items:flex-start;
+    justify-content:flex-start; */
+  }
+  .t-next-1 img{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+  }
+  .t-next-1 h4{
+    position:absolute;
+    bottom:30px; /* Position text 30px from the bottom */
+    left: 30px; /* Position text 30px from the left */
+    padding:0;
+    display:flex;
+    color:white;
+    z-index:2;
+    margin:0;
+  }
+  .t-next-1 h4 span{
+    position:absolute;
+    bottom:-30px; 
+    left:0; 
+    padding:0;
+    z-index:2;
+    display:block;
+  }
+  
+  .t-next-2 {
+    flex: 0 0 30%; /* Takes 100% of the available width */
+    flex-direction: column; /* Stacks the two images vertically */
+    gap: 10px; /* Adds space between the two images */
+  }
+  
+  .t-next-2 img {
+    width: 100%;
+    height:295px; /* Ensures that the images take up the full width of the container */
+    object-fit:cover;
+  }
+  /* .txt-next-1 {
+    flex:0 0 100%;
+    display:flex;
+    flex-direction: column;
+  } */
+  .latest{
+    text-align:center ;
+    color:#007BFF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .updates{
+    width:100%;
+    height:auto;
+    position:relative;
+  }
+
+  .updates img{
+    width:100%;
+    height:auto;
+  }
+  .updates .updates-txt{
+   position:absolute;
+   bottom:20px;
+   left:20px;
+   color:white;
+  }
+  .short-update{
+    width:100%;
+    height: auto;
+    border:7px solid white;
+    background-color:#007BFF;
+    color:white;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    
+  }
+  .short-updates p{
+    text-align: right;
+ 
+  }
+  .highlight{
+    text-align:center ;
+    color:#007BFF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .snapshot {
+    position: relative;
+    overflow: hidden;
+    margin-bottom:5px;
+  }
+  
+  .snapshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 123, 255, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(100%);
+  }
+  
+  .snapshot:hover .overlay {
+    opacity: 1;
+    transform: translateY(0); /* Bring the overlay text on top */
+  }
+  
+  .snapshot:hover img {
+    transform: scale(1.1); /* Zoom the image on hover */
+  }
+  .subscribe-container{
+    width:100%;
+    height:200px;
+    position:relative;
+    background-color: #007BFF;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+  }
+  .subscribe-container h3{
+    /* position:absolute;
+    display:flex;
+    left:50%;
+    top:10%;
+    transform: translate(-50%, -10%);
+      */
+    font-size: 2em; /* Responsive font size */
+    color:white;
+  }
+  .subscribe-container h5{
+    /* position:absolute;
+    left:50%;
+    top:30%;
+    transform: translate(-50%, -30%);
+    text-align: right; */
+    margin: 10px 0; /* Add some space */
+    color:white;
+  }
+  .subscribe-container input{
+    /* position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 5px;
+    border-color: 1px solid #233547;
+    width: 80%; /* Use percentage for responsive width */
+    max-width: 400px; /* Maximum width */
+    height: 40px;
+    padding: 0 10px; /* Add padding for better UX */
+  }
+  .subscribe-container button{
+    /* position:absolute;
+    left:50%;
+    top:65%;
+    transform: translate(-50%, -65%); */
+    border-radius: 5px;
+    background-color: #0056b3; /* Add background color for button */
+    color: white; /* Set text color for button */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-top:3px;
+    
+  }
+  .subscribe-container button p{
+    margin:0; 
+  }
+  .donate {
+    width:100%;
+    height:auto;
+    background-image: url('/photos/light-grey-maji-kwa-watoto-foundation1.png');
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    gap:30px;
+    margin-top:50px;
+  }
+  
+  .donate h2{
+   margin-top:-30px;
+    width:100%;
+    height:auto;
+    padding: 5px;
+    background-color:rgb(35, 161, 192);
+    text-align: center;
+    /* border: 2px solid white; */
+    color:white;
+    align-self: flex-start;
+  }
+  .donate a{
+    text-decoration:none;
+  }
+  .donate .mkw h2{
+    width:100%;
+    height:auto;
+    padding: 5px;
+    background-color:#0078C8;
+    border: 2px solid white;
+    color:white;
+    text-align: center;
+  }
+  .donate .involved h2{
+    width:100%;
+    height:auto;
+    padding: 5px;
+    background-color:#0D3C55;
+    border: 2px solid white;
+    color:white;
+    text-align: center;
+  }
+  .donate .partners{
+    display:flex;
+    flex-direction: row;
+  }
+  .donate .thepartner img{
+    width:60%;
+    height:auto;
+    position:relative;
+    transition: transform 3s ease;
+    object-fit:cover;
+   
+  }
+  .donate .thepartner p{
+    opacity: 0;
+    bottom:0;
+    left:0;
+    transform: translateY(100%);
+    background-color:rgb(33, 123, 202);
+    background-size: contain;
+    color:white;
+  }
+  .donate .thepartner:hover p{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+ 
+
+
+/* MEDIA QUERIES*/
+    @media(max-width:992px){
+        .foundation-face-tiles{
+            flex-direction:column;
+        }
+        .outreach-tile, .impact-tile, .involved-tile{
+            width:100%;
+            height:80vh;  
+            margin-bottom:10px;
+        }
+        .heading-next{
+            width:100%;
+        }
+        .tiles-next{
+           flex-direction:column; 
+        }
+        .t-next-1{
+            flex: 0 0 100%;
+            height:80vh;
+        }
+       
+        .t-next-2{
+            flex: 0 0 100%;
+            height:80vh;
+        }
+        .t-next-1 img, .t-next-2 img {
+            height:60vh;
+        }
+        
+        .video-background{
+          height:100vh;
+          object-fit:cover;
+        }
+        .watoto-video{
+          height:100vh;
+        } 
+        
+         .watoto-logo img{
+          max-width:150px;
+          height:auto;
+        }
+        
+           
+    }
+
+    @media (max-width: 768px) {
+      .subscribe-container h3 {
+          font-size: 1.5em; /* Smaller font size on smaller screens */
+      }
+      .donate h2, .donate .mkw h2, .donate .involved h2{
+        font-size: 1.5em;
+       }
+       .video-text{
+        font-size: 0.9em;
+        width: 90%; /* Narrow text container on smaller screens */
+      }
+      .watoto-logo img{
+        max-width:100px;
+        height:auto;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .subscribe-container h3 {
+          font-size: 1.2em; /* Even smaller font size for very small screens */
+       }
+       .donate h2, .donate .mkw h2, .donate .involved h2{
+        font-size: 1.2em;
+       }
+       .video-text{
+        font-size:0.8em;
+        width: 95%; /* Extra narrow text width on smallest screens */
+     }
+     .watoto-logo img{
+      max-width:90px;
+      height:auto;
+    }
+    }
+  
