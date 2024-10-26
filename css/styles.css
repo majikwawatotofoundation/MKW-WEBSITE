@@ -40,8 +40,17 @@ body{
     width:80%;
 }
 
-.outreach-tile{
-    background-image:url("../photos/outreach-to-schools-maji-kwa-watoto-foundation.jpeg") no-repeat;
+.tile-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the div without distortion */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.outreach-tile,.impact-tile, .involved-tile{
     background-size: cover;
     overflow:hidden;
     margin-right:10px;
@@ -76,21 +85,7 @@ body{
 .outreach-tile a p{
     margin: 0;
 }
-.impact-tile{
-    background-image:url("../photos/impact-in-schools-maji-kwa-watoto-foundation.jpeg") no-repeat;
-    background-size: cover;
-    overflow:hidden;
-    margin-right:10px;
-    /* width:400px; */
-    width: 32%;
-    height:300px;
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Stack the h2 and a tag vertically */
 
-}
 .impact-tile h2{
  position: relative;
  margin-bottom: 20px;
@@ -112,19 +107,7 @@ body{
 .impact-tile a p{
     margin: 0;
 }
-.involved-tile{
-    background-image:url("../photos/nlvisitor-with-children-maji-kwa-watoto-foundation.jpeg") no-repeat;
-    background-size: cover;
-    overflow:hidden;
-    width: 32%;
-    height:300px;
-    position:relative;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column; /* Stack the h2 and a tag vertically */
 
-}
 .involved-tile h2{
  position: relative;
  margin-bottom: 20px;
