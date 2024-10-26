@@ -41,7 +41,7 @@ body{
 }
 
 .outreach-tile{
-    background-image:url('/photos/outreach-to-schools-maji-kwa-watoto-foundation.jpeg');
+    background-image:url('photos/outreach-to-schools-maji-kwa-watoto-foundation.jpeg');
     background-size: cover;
     overflow:hidden;
     margin-right:10px;
@@ -77,7 +77,7 @@ body{
     margin: 0;
 }
 .impact-tile{
-    background-image:url('/photos/impact-in-schools-maji-kwa-watoto-foundation.jpeg');
+    background-image:url('photos/impact-in-schools-maji-kwa-watoto-foundation.jpeg');
     background-size: cover;
     overflow:hidden;
     margin-right:10px;
@@ -113,7 +113,7 @@ body{
     margin: 0;
 }
 .involved-tile{
-    background-image:url('/photos/nlvisitor-with-children-maji-kwa-watoto-foundation.jpeg');
+    background-image:url('photos/nlvisitor-with-children-maji-kwa-watoto-foundation.jpeg');
     background-size: cover;
     overflow:hidden;
     width: 32%;
@@ -376,7 +376,7 @@ body{
   .donate {
     width:100%;
     height:auto;
-    background-image: url('/photos/light-grey-maji-kwa-watoto-foundation1.png');
+    background-image: url('photos/light-grey-maji-kwa-watoto-foundation1.png');
     position:relative;
     display:flex;
     flex-direction:column;
