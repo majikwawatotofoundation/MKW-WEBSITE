@@ -62,7 +62,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Stack the h2 and a tag vertically */
-
+    object-fit:cover;
 }
 .outreach-tile h2{
  position: relative;
@@ -264,6 +264,8 @@ body{
     position: relative;
     overflow: hidden;
     margin-bottom:5px;
+    padding-right:1px;
+
   }
   
   .snapshot img {
@@ -359,7 +361,6 @@ body{
   .donate {
     width:100%;
     height:auto;
-    background-image: url("../photos/light-grey-maji-kwa-watoto-foundation1.png") no-repeat;
     position:relative; 
     display:flex;
     flex-direction:column;
@@ -367,7 +368,9 @@ body{
     justify-content:flex-start;
     gap:30px;
     margin-top:50px;
+    z-index: 2;
   }
+  
   
   .donate h2{
    margin-top:-30px;
@@ -379,9 +382,11 @@ body{
     /* border: 2px solid white; */
     color:white;
     align-self: flex-start;
+    z-index: 2;
   }
   .donate a{
     text-decoration:none;
+    z-index: 2;
   }
   .donate .mkw h2{
     width:100%;
@@ -392,6 +397,10 @@ body{
     color:white;
     text-align: center;
   }
+  .donate .involved, .donate .mkw{
+    z-index: 2;
+  }
+
   .donate .involved h2{
     width:100%;
     height:auto;
@@ -400,10 +409,12 @@ body{
     border: 2px solid white;
     color:white;
     text-align: center;
+   
   }
   .donate .partners{
     display:flex;
     flex-direction: row;
+    z-index:2;
   }
   .donate .thepartner img{
     width:60%;
@@ -411,6 +422,7 @@ body{
     position:relative;
     transition: transform 3s ease;
     object-fit:cover;
+   
    
   }
   .donate .thepartner p{
@@ -421,12 +433,136 @@ body{
     background-color:rgb(33, 123, 202);
     background-size: contain;
     color:white;
+  
   }
   .donate .thepartner:hover p{
     opacity: 1;
     transform: translateY(0);
+  
   }
+  .donate-background{
+    width: 100%;
+    height:300px;
+    object-fit: cover; /* Ensures the image covers the div without distortion */
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 1;
+    }
+    .donate-here-container{
+      position:relative;
+      width:100%;
+      height:auto;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      margin-top:30px;
 
+      /* flex-direction:column; */
+    
+      /* margin-bottom:5px;
+      
+      align-items:center;
+      
+      text-align: center; */
+    }
+    .donate-here{
+      display:flex;
+      width:50vw;
+      height:auto;
+      /* position:absolute; */
+      text-align: center;
+      flex-direction:column;
+      /* top:0%;
+      left:50%;
+      transform:translate(-0%, -50%); */
+      border:2px solid #233547;
+      padding-right:20px;
+      padding-left:20px;
+    }
+
+    /* .donate-here input{
+      display:inline-block;
+      align-items:center;
+      justify-content: center;
+      margin-bottom:5px;
+      padding:5px;
+    } */
+    .name-input{
+      display:flex;
+      flex-direction: row;
+      align-items:center;
+      justify-content: space-between;
+      margin-bottom:5px;
+      /* margin-right:10px; */
+      /* padding:5px; */
+      /* width:200px;
+      height:300px; */
+      box-shadow:#0056b3;
+    }
+    .name-input1, .name-input2{
+      height:50px;
+      width:40%;
+      display:inline-block;
+     
+    } 
+    .details-input{
+      display:flex;
+      /* display:inline-block; */
+      flex-direction:column;
+       /* display:block; */
+       box-shadow:#0056b3;
+       /* align-items:center; */
+      /* justify-content: center; */
+      
+    }
+    .email-input{
+      display:block;
+      width:100%;
+      height:50px;
+      margin-bottom:5px;
+    }
+    .comment-input{
+      width:100%;
+      height:70px;
+      display:block;
+    }
+    .send{
+      /* display:flex; */
+      height:50px;
+      width: 50%;
+      display:inline-block;
+      background-color: #0078C8;
+      margin:10px auto; /* Centers the button horizontally */
+      color:white;
+      text-align: center;
+      margin: 10px auto; /* Centers the button horizontally */
+      line-height: 50px; /* Vertically centers the text */
+      cursor: pointer; /* Optional: make it look like a button */
+      
+    }
+    .send h4 {
+      margin: 0; /* Ensure the h4 element inside the button doesn't have any extra margin */
+    }
+       /* Apply inner shadow to all input fields */
+    .name-input1, .name-input2, .email-input, .comment-input {
+     box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2); /* Creates inner shadow */
+     border: 1px solid #ccc; /* Optional: gives a slight border */
+     padding: 5px;
+     border-color: #0078C8;
+   }
+   
+   .m-donate{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+
+    
  
 
 
@@ -437,8 +573,11 @@ body{
         }
         .outreach-tile, .impact-tile, .involved-tile{
             width:100%;
-            height:80vh;  
-            margin-bottom:10px;
+            height:60vh;  
+            margin-top:1px;
+            margin-bottom:1px;
+             padding:0;
+            /* object-fit:cover;  */
         }
         .heading-next{
             width:100%;
@@ -471,6 +610,14 @@ body{
           max-width:150px;
           height:auto;
         }
+        .m-donate img{
+         width:50%;
+         height:auto
+        }
+        .donate-here{
+          display:flex;
+          width:70vw;
+        }
         
            
     }
@@ -495,6 +642,29 @@ body{
         font-size: 0.6em;
         
       }
+      .donate-here{
+        display:flex;
+        width:80vw;
+        font-size: 0.9em;
+        width: 90%; /* Narrow text container on smaller screens */
+      }
+      
+    }
+    @media (max-width: 575px) {
+      .name-input, .details-input, .m-donate{
+        display:flex;
+        flex-direction:column;
+        margin-bottom:5px;
+      }
+      .name-input1, .name-input2{
+        width:100%;
+        margin-bottom:5px;
+      }
+      .donate-here, .m-donate h5{
+        display:flex;
+        width:90vw;
+      }
+
     }
   
     @media (max-width: 480px) {
@@ -508,6 +678,7 @@ body{
         font-size:0.8em;
         width: 95%; /* Extra narrow text width on smallest screens */
      }
+
      .watoto-logo img{
       max-width:90px;
       height:auto;
@@ -515,6 +686,10 @@ body{
     .overlay {
       font-size: 0.5em;
       
+    }
+    .donate-here, .m-donate h5{
+      font-size:0.8em;
+      width: 95%; /* Extra narrow text width on smallest screens */
     }
     
     }
