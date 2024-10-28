@@ -539,7 +539,8 @@ body{
       text-align: center;
       margin: 10px auto; /* Centers the button horizontally */
       line-height: 50px; /* Vertically centers the text */
-      cursor: pointer; /* Optional: make it look like a button */
+      cursor: hand; /* Optional: make it look like a button */
+      border:none;
       
     }
     .send h4 {
@@ -559,6 +560,36 @@ body{
     justify-content: center;
     align-items: center;
    }
+   .mpesa-donation, .paypal-donation{
+    margin-top:10px;
+   }
+   .pal-donate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+   .pal-donate img{
+    width:50%;
+    height: auto;
+   }
+   .pal-donate a{
+    text-decoration: none;
+   }
+   .pal-donate a h4{
+    text-decoration:none;
+    background-color: #0078C8;
+    border-color: 2px solid black;
+    color:white;
+    font-size:2em;
+    padding:5px;
+
+   }
+   .pal-donate a h4 {
+    margin: 0; /* Ensure the h4 element inside the button doesn't have any extra margin */
+  }
+
+   
 
 
 
@@ -664,6 +695,18 @@ body{
         display:flex;
         width:90vw;
       }
+      .m-donate h5{
+       display:flex;
+       justify-content: center; 
+       align-items: center;
+      }
+      .pal-donate a img{
+       width:30%;
+       height:auto;
+      }
+      .pal-donate a h4{
+       font-size:1em;
+       }
 
     }
   
@@ -688,7 +731,7 @@ body{
       
     }
     .donate-here, .m-donate h5{
-      font-size:0.8em;
+      font-size:0.9em;
       width: 95%; /* Extra narrow text width on smallest screens */
     }
     
