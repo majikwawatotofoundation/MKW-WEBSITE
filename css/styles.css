@@ -9,6 +9,7 @@ body{
     width:100%;
     height:100vh;
     overflow:hidden;
+    z-index:1;
 }
 
 
@@ -39,6 +40,120 @@ body{
     z-index: 2;
     width:80%;
 }
+.navbar {
+  position:relative;
+  display:flex;
+  z-index:2;
+}
+/* .nav-elements{
+  display: flex;
+  position:relative;
+  width:50vw;
+  height:auto;
+} */
+.button-wrapper{
+  top:15px;
+  right:15px;
+  padding:10px;
+  position:absolute;
+  z-index:2;
+}
+.navbar-collapse{
+  top:50px;
+  right:70px;
+  padding:10px;
+  position: absolute;
+  z-index:4;
+  background-color: #0078C8;
+  width:300px;
+  height:400px;
+  /* top: 60px; */
+    /* right: 15px; */
+    /* padding: 20px; */
+    position: absolute;
+    background-color: #0078C8;
+    /* width: 250px; */
+    max-width: 80vw;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+ 
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    background: none;
+}
+.navbar-collapse ul li a{
+  color:white;
+  padding: 8px 15px;
+  font-size: 1rem;
+}
+.dropdown-menu{ 
+  background-color: #0056b3;
+}
+
+
+/* Toggler button styling */
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+/* Remove outline on click */
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  transition: all 0.1s ease;
+  background-color: blue;
+  transition: background-color 0.3s ease;
+}
+.navbar-toggler.active .bar {
+  background-color: white;
+}
+
+/* Collapse content */
+/* .navbar-collapse{
+  display: none; 
+} */
+/* Toggler button transformation */
+.navbar-toggler.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 9.5px;
+}
+
+.navbar-toggler.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -9.5px;
+}
+/* Show the navbar-collapse when active */
+.navbar-collapse.show {
+  display: block; 
+}
+.custom-toggler{
+  display:flex;
+  size:-20%;
+  margin-bottom: 1px;
+  padding-bottom: 0;
+}
 
 .tile-image {
   width: 100%;
@@ -56,7 +171,7 @@ body{
     margin-right:10px;
     /* width:400px; */
     width: 32%;
-    height:300px;
+    height:341px;
     position:relative;
     display: flex;
     justify-content: center;
@@ -681,7 +796,7 @@ body{
       }
       
     }
-    @media (max-width: 575px) {
+    @media (max-width: 576px) {
       .name-input, .details-input, .m-donate{
         display:flex;
         flex-direction:column;
@@ -707,6 +822,15 @@ body{
       .pal-donate a h4{
        font-size:1em;
        }
+       /* Smaller padding for compact view */
+    /* .navbar-collapse {
+      padding: 15px;
+      width: 200px;
+    }
+
+    .navbar-collapse ul li a {
+      font-size: 0.9rem;
+    } */
 
     }
   
