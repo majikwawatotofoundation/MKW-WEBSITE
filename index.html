@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/styles.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     
 
@@ -47,25 +48,33 @@
               <span class="bar"></span>
               </button>
           </div>
+          <div class="search-container" >
+            <input type="text" id="search-input" class="search-input form-control me-2" placeholder="Search site...">
+            <button id="search-btn" class="search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+            <button id="close-btn" class="close-btn">&times;</button>
+          </div> 
+        
           
           <div id="navbar-content" class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">OUTREACH</a>
+                <a class="nav-link" href="outreach.html">OUTREACH</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> OUR IMPACT</a>
+                <a class="nav-link" href="impact.html"> OUR IMPACT</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
                   GET INVOLVED
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">DONATE THROUGH US</a></li>
-                  <li><a class="dropdown-item" href="#">DONATE THROUGH OUR SPONSORS</a></li>
+                  <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
+                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="blank">DONATE THROUGH OUR SPONSORS</a></li>
                   <!-- <li><hr class="dropdown-divider"> </li> -->
                   <li><a class="dropdown-item" href="#">VOLUNTEER</a></li>
                   <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
@@ -84,8 +93,8 @@
                   AFFILIATES
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">STICHING WATERPAS</a></li>
-                  <li><a class="dropdown-item" href="#">NEW DUTCH WATER LIMITED</a></li>
+                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
+                  <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
                 </ul>
                 
               </li>
@@ -99,6 +108,7 @@
          
         
         </nav>
+        
       <a href="index.html" class="watoto-logo" >
           <img src="photos/logo-maji-kwa-watoto.jpeg">
           </a>
