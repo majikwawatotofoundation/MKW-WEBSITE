@@ -26,9 +26,40 @@ window.addEventListener('click', (event) => {
       navbarContent.classList.remove('show');
       toggler.classList.remove('active');
   }
+  //ADJUST TO MAKE CLICK OUTSIDE SEACH INPUT ALSO CLOSES IT --CHANGE AND UNDERSTAND IF PART
+
+  
+//   if (!navbarContent.contains(event.target) && !toggler.contains(event.target)) {
+//     searchContainer.classList.remove('active');
+  // searchInput.classList.remove('show');
+  // closeButton.classList.remove('show');
+
+// }
 });
+
+// OPENING AND CLOSING THE SEARCH INPUT AND CLOSE BUTTON
+const searchContainer = document.querySelector('.search-container');
+const searchInput = document.querySelector('.search-input');
+const searchButton = document.querySelector('.search-btn');
+const closeButton = document.querySelector ('.close-btn');
+
+searchButton.addEventListener('click', () =>{
+  searchContainer.classList.toggle('active');
+  searchInput.classList.toggle('show');
+  closeButton.classList.toggle('show');
+});
+
+closeButton.addEventListener('click', function () {
+  searchContainer.classList.remove('active');
+  searchInput.classList.remove('show');
+  closeButton.classList.remove('show');
+
+});
+
 };
+
  initializeNavbar()
 });
+
 
 
