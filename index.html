@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/styles.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     
 
@@ -22,52 +23,110 @@
     
   </head> 
   <body>
-     <!-- <nav> -->
+   
+     <div class="video-background "> 
+      <nav class="navbar">
+        <div class="nav-elements container-fluid">
+          <div class="button-wrapper">
+          
+            <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation" aria-label="Toggle navigation">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              </button>
+          </div>
+          <div class="search-container" >
+            <input type="text" id="search-input" class="search-input form-control me-2" placeholder="Search site...">
+            <button id="search-btn" class="search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+            <button id="close-btn" class="close-btn">&times;</button>
+          </div> 
         
+          
+          <div id="navbar-content" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="outreach.html">OUTREACH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impact.html"> OUR IMPACT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  GET INVOLVED
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
+                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="blank">DONATE THROUGH OUR SPONSORS</a></li>
+                  <!-- <li><hr class="dropdown-divider"> </li> -->
+                  <li><a class="dropdown-item" href="#">VOLUNTEER</a></li>
+                  <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
+                </ul>
+                
+              </li>
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+              <li>
+                
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  AFFILIATES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
+                  <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
+                </ul>
+                
+              </li>
+               
+              
+            </ul>
             
-        <!-- <div class="search-container" >
-                <input type="text" id="search-input" class="search-input form-control me-2" placeholder="">
-                <button id="search-btn" class="search-btn">
-                  <i class="bi bi-search"></i>
-                </button>
-                <button id="close-btn" class="close-btn">&times;</button>
-       </div>  -->
-              
-       <!-- <button id="custom-toggler" class="navbar-toggler" aria-label="Toggle navigation">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              
-      </button>   
-     </nav> -->
-     <div class="video-background"> 
+           </div>
+        </div><!---end of nav-elements-->
+       
+         
+        
+        </nav>
+        
       <a href="index.html" class="watoto-logo" >
-          <img src="photos/logo-maji-kwa-watoto.jpeg">
+          <img src="photos/logo-maji-kwa-watoto.png">
           </a>
-
-      <video class="watoto-video" src="videos/video-loop-maji-kwa-watoto-foundation.mp4" autoplay muted loop playsinline></video>
+      <div class="video-placeholder"></div> <!-- Black placeholder -->
+      <video type="video/mp4" class="watoto-video" src="videos/quench-maji-kwa-watoto-palceholder-video.mp4" autoplay muted loop playsinline></video>
       <div class="video-text"><h1>Bringing Life and Hope to Our Children</h1> <br>
        <p>Delivering healthy drinking water to brighten children's smiles and secure their future</p></div> 
-    </div>
-     <div class="container-fluid">
+    </div> <!--END OF NAVBAR AND VIDEO BACKGROUND-->
+
+     <!-- <div class="container-fluid">  -->
       
       <div class="foundation-face-tiles row mt-3 justify-content-between">
         <div class=" outreach-tile col-md-4">
+          <img src="photos/outreach-to-schools-maji-kwa-watoto-foundation.jpeg" alt="Outreach" class="tile-image">
           <h2>OUTREACH</h2>
           <a href="outreach.html"><p>Discover Our Work</p></a>
         </div>
         <div class=" impact-tile col-md-4">
+          <img src="photos/impact3-maji-watoto-foundation.jpeg" alt="Our Impact" class="tile-image">
           <h2>OUR IMPACT</h2>
           <a href="impact.html"><p>See the Difference</p></a>
           
         </div>
         <div class=" involved-tile col-md-4">
+          <img src="photos/nlvisitor-with-children-maji-kwa-watoto-foundation.jpeg" alt="Get Involved" class="tile-image">
           <h2>GET INVOLVED</h2>
           <a href="involved.html"><p>Join Us Today</p></a>
           
         </div>
 
-      </div>
+      </div> <!---end of face tiles-->
       <div class="d-flex justify-content-center align-items-center mt-3 happening-next-wrp">
         <div class="heading-next"><h2>WHAT'S HAPPENING NEXT</h2></div> 
        </div>
@@ -82,7 +141,7 @@
            
           </div>
           <div class="d-flex t-next-2 col-md-12 col-lg-6"> 
-              <img src="photos/light-grey-maji-kwa-watoto-foundation1.png" alt="happening-image">
+              <img src="photos/christmas-maji-kwa-watoto-foundation.jpg" alt="happening-image">
               <img  src="photos/light-grey-maji-kwa-watoto-foundation1.png" alt="happening-image">
           </div>
 
@@ -104,82 +163,85 @@
           
            special prize giving day to celebrate this success</p></div>
 
-        <div class="highlight mt-3 "><h2>HIGHLIGHTS FROM OUR SCHOOLS</h2></div>
-        <div class="highlight-container row">
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+        <div class="highlight mt-3"><h2>HIGHLIGHTS FROM OUR SCHOOLS</h2></div>
+        <div class="highlight-container row"> <!---THIS PICS WILL BE LOADED LAST FROM A JSON TO REDUCE THE LOAD TIME-->
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-all-smiles-maji-kwa-watoto.jpeg" alt="Snapshot 1">
             <div class="overlay">Joyful children pose with deuces and playful hand signs, beaming at the camera.</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/New-dutch-water's-GM-maji-kwa-watoto.jpg" alt="Snapshot 2">
             <div class="overlay">School 2</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/two-visitors-maji-kwa-watoto-foundation (1).jpeg" alt="Snapshot 3">
             <div class="overlay">Our visitors share smiles and high-fives, spreading love to eager hands.</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-at-assembly-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 4">
             <div class="overlay">School 4</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-drinking-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 5">
             <div class="overlay">Little girls sip water by the tank, shy smiles lighting up their faces.</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-enjoying-healthy-clean-drinking-water.jpg" alt="Snapshot 6">
             <div class="overlay">School 6</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-mkw.jpeg" alt="Snapshot 7">
             <div class="overlay">School 7</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
-            <img src="photos/children-fetching-WATER-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 8">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
+            <img src="photos/children-fetching-WATER-maji-kwa-watoto-foundation.jpg" alt="Snapshot 8">
             <div class="overlay">School 8</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/boys-enjoying-healthy-clean-water-maji kwa watoto (2).jpeg" alt="Snapshot 9">
             <div class="overlay">School 9</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-lining-up-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 10">
             <div class="overlay">School 10</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-mkwbowser-maji kwa watoto.jpeg" alt="Snapshot 11">
             <div class="overlay">School 11</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
-            <img src="photos/children-with-dutch-water-staff.jpeg" alt="Snapshot 12">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
+            <img src="photos/children-with-dutch-water-staff.jpg" alt="Snapshot 12">
             <div class="overlay">School 12</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-mkw.jpeg" alt="Snapshot 13">
             <div class="overlay">School 13</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-skipping-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 14">
             <div class="overlay">School 14</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-with-visitors-maji-kwa-watoto.jpeg" alt="Snapshot 15">
             <div class="overlay">School 15</div>
           </div>
-          <div class="snapshot col-sm-12 col-md-4 col-lg-3">
+          <div class="snapshot col-6 col-md-4 col-lg-3">
             <img src="photos/children-games-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 16">
             <div class="overlay">School 16</div>
           </div>
           
-        </div>
+        </div> <!--end of highlight conte=ainer pics-->
+
+
         <form class="subscribe-container mb-2">
+            
           <h3> We send periodical Newsletters</h3>
           <h5>Email adress*</h5>
           <input type="email" name="email" placeholder="Enter your email" required>
           <button type="submit"><p>Subscribe Now</p></button>
         </form>
         <div class="donate">
-          
+          <img src="photos/donate-maji-kwa-watoto-foundation.jpeg" alt="donate" class="donate-background">
           <h2 >SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN </h2>
           <a href="involved.html" class="mkw"  ><h2>DONATE THROUGH US</h2></a>
           <div class="involved"><h2>DONATE THROUGH OUR PARTNER</h2></div>
@@ -188,14 +250,8 @@
               <a href="https://www.stichtingwaterpas.nl/" target="_blank" >
               <img src="photos/waterpas-logo-maji-kwa-watoto-foundation.png" alt="stiching waterpas">
               <p>Donate through our trusted partner</p></a>
-            </div>
-          
-        </div>
-        
-
-
-     </div><!--END OF CONTAINER FLUID-->
-       
+            </div><!--end of the partner-->
+           </div><!--end of partners row-->
        
           
         
@@ -230,28 +286,9 @@
    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+    <script src="js/Navbar & inpage functionalities.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-    <script>
-     (function(){
-      emailjs.init("mv36TlOze_qyLMwmk"); // Replace with your EmailJS user ID
-     })();
-     document.querySelector('.subscribe-container').addEventListener('submit', function(event) {
-          event.preventDefault(); // Prevent the default form submission
-
-          emailjs.sendForm('service_cv5v8st', 'template_kl7noza', this)
-              .then(function() {
-                  alert('Thank you for subscribing!'); // Success message
-              }, function(error) {
-                  alert('Failed to send. Please try again.'); // Error message
-                  console.log('FAILED...', error);
-              });
-      });
-     </script>
-
-   
-   
-
+    <script src="js/thirdpartyfunctions.js"></script>
+    <script src="js/lazy-loading.js"></script>
   </body>
 </html>
-<html></html>
