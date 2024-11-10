@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Welcome to Kibo Restaurant in Watamu, offering a vibrant seafood dining experience with fresh, ocean-sourced dishes, stunning beachfront views, and sustainable practices.">
@@ -15,83 +14,193 @@
     <link rel="stylesheet" href="css/styles.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    
-
-    <title>Maji Kwa Watoto Foundation</title>
-    
+    <title>Maji Kwa Watoto Foundation</title> 
   </head> 
   <body>
-    <div class="container-fluid">
-        <div class="donate-here-container">
-            <form class="donate-here ">
-                <h4>Your Message and Donation</h4> 
-                <p>We invite you to share a personal message or comment along with your donation.
-                    Your support means a lot to us, and your words inspire our mission. 
-                    Rest assured, your personal details will be stored securely and never shared without your permission.</p>
-                <div class="name-input"><input class="name-input1" type="text" placeholder="First Name*" >
-                    <input class="name-input2"type="text" placeholder="Last Name*" >
-                </div>
-                <div class="details-input">
-                    <input  class="email-input"  type="text" placeholder="Enter your Email adress*" >
-                    <input class="comment-input" type="text" placeholder="Leave a comment" >
-                </div>
-                <button class="send"   type="submit"><h4>SEND</h4></button></button>
+    <div class="header-background"> 
+      <nav class="navbar">
+        <div class="nav-elements container fluid">
+          <div class="button-wrapper">
+          
+            <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation" aria-label="Toggle navigation">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              </button>
+          </div>
+          <div class="search-container" >
+            <input type="text" id="search-input" class="search-input form-control me-2" placeholder="Search site...">
+            <button id="search-btn" class="search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+            <button id="close-btn" class="close-btn">&times;</button>
+          </div> 
+        
+          
+          <div id="navbar-content" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="outreach.html">OUTREACH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impact.html"> OUR IMPACT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  GET INVOLVED
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
+                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="blank">DONATE THROUGH OUR SPONSORS</a></li>
+                  <!-- <li><hr class="dropdown-divider"> </li> -->
+                  <li><a class="dropdown-item" href="#">VOLUNTEER</a></li>
+                  <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
+                </ul>
                 
-                <div class="mpesa-donation"><h4> Donate via Mpesa</h4>
-                    <div class="m-donate"><img src="photos/mpesa-logo-maji-kwa-watoto-foundation.png" alt="mpesa-logo">
-                        <h5> MPESA PAYBILL: <br>
-                            Paybill Number: 552800 <br>
-                            Account Number: 300440
-                            
-                        </h5>
-                    </div>   
-                </div>
-                <div class="paypal-donation">
-                    <h4> Donate via Paypal</h4>
-                    <div class="pal-donate">
-                        <a href="https://www.paypal.com/donate?hosted_button_id=L5Z2RNBPDC9PG#" alt="paypal-link" target="_blank">
-                            <img src="photos/paypal-logo-maji-kwa-watoto.png" alt="paypal-logo"></a>
-                        <a href="https://www.paypal.com/donate?hosted_button_id=L5Z2RNBPDC9PG#" alt="paypal-link" target="_blank">
-                            <h4 class="pal-donate"> Donate Now</h4></a>
+              </li>
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+              <li>
+                
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  AFFILIATES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
+                  <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
+                </ul>
+                
+              </li>
+               
+              
+            </ul>
+            
+           </div>
+        </div><!---end of nav-elements-->
+       
+         
+        
+        </nav>
+        
+      <a href="index.html" class="watoto-logo" >
+          <img src="photos/logo-maji-kwa-watoto.png">
+          </a>
+          <img class="image-background" src="photos/light-grey-maji-kwa-watoto-foundation1.png">
+            <div class="back-links"><a href="index.html"><h4> Home</h4></a> 
+              <h4>Welcome aboard!</h4></div>   
+    </div> <!--END OF NAVBAR AND VIDEO BACKGROUND-->
+    <div class="main-container container-fluid">
+      
+
+            <div class="donate-here-container">
+                <form class="donate-here ">
+                    <h4>Your Message and Donation</h4> 
+                    <p>We invite you to share a personal message or comment along with your donation.
+                        Your support means a lot to us, and your words inspire our mission. 
+                        Rest assured, your personal details will be stored securely and never shared without your permission.</p>
+                    <div class="name-input"><input class="name-input1" type="text" placeholder="First Name*" >
+                        <input class="name-input2"type="text" placeholder="Last Name*" >
+                    </div>
+                    <div class="details-input">
+                        <input  class="email-input"  type="text" placeholder="Enter your Email adress*" >
+                        <input class="comment-input" type="text" placeholder="Leave a comment" >
+                    </div>
+                    <button class="send"   type="submit"><h4>SEND</h4></button></button>
+                    
+                    <div class="mpesa-donation"><h4> Donate via Mpesa</h4>
+                        <div class="m-donate"><img src="photos/mpesa-logo-maji-kwa-watoto-foundation.png" alt="mpesa-logo">
+                            <h5> MPESA PAYBILL: <br>
+                                Paybill Number: 552800 <br>
+                                Account Number: 300440
+                                
+                            </h5>
+                        </div>   
+                    </div>
+                    <div class="paypal-donation">
+                        <h4> Donate via Paypal</h4>
+                        <div class="pal-donate">
+                            <a href="https://www.paypal.com/donate?hosted_button_id=L5Z2RNBPDC9PG#" alt="paypal-link" target="_blank">
+                                <img src="photos/paypal-logo-maji-kwa-watoto.png" alt="paypal-logo"></a>
+                            <a href="https://www.paypal.com/donate?hosted_button_id=L5Z2RNBPDC9PG#" alt="paypal-link" target="_blank">
+                                <h4 class="pal-donate"> Donate Now</h4></a>
+                        </div>
+                        
                     </div>
                     
-                </div>
-            </form>
+                </form>
                 
-        </div>
-        
-    </div>
+                
+                    
+          
+            
+            </div><!-- end of donate here container-->
+            <div class="team-text "> 
+              <p>Join us in making a difference! Whether through donations, volunteering, or spreading awareness, your support brings safe drinking water to more children.
+              </p>
+              <h5>Ways to Contribute:</h5>
+              <ul>
+                <li>
+                  <span class="list-icon"></span>
+                  <h6>Sponsor a Water Tank:</h6>
+                  <p>With a one-time donation, help provide essential water storage for schools that currently lack infrastructure.</p>
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  <h6>Monthly Water Supplies: </h6>
+                  <p>Fund a portion of the Ksh 4-per-liter cost to ensure uninterrupted water access for schools and centres.</p>
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  <h6>General Contributions:  </h6>
+                  <p> Donate through Stichting Waterpas Foundation or directly to MKW to support our ongoing efforts.</p>
+                </li>
+              </ul>
+              <p>You can also volunteer to help with community initiatives or environmental programs.</p>
+            </div>
+            
+
+    </div><!--END OF MAIN CONTAINER-->
+    <form class="subscribe-container mb-2">
+            
+      <h3> We send periodical Newsletters</h3>
+      <h5>Email adress*</h5>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit"><p>Subscribe Now</p></button>
+    </form>
+    <div class="donate">
+      <img src="photos/donate-maji-kwa-watoto-foundation.jpeg" alt="donate" class="donate-background">
+      <h2 >SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN </h2>
+      <a href="involved.html" class="mkw"  ><h2>DONATE THROUGH US</h2></a>
+      <div class="involved"><h2>DONATE THROUGH OUR PARTNER</h2></div>
+      <div class="partners row"><!--WHEN WE GET MORE PATNERS I WILL PUT A CAROUSEL OF CLICKABLE PATRNERS LOGOS TO DONATION PAGES-->
+        <div class="thepartner mx-1 col-sm-12">
+          <a href="https://www.stichtingwaterpas.nl/" target="_blank" >
+          <img src="photos/waterpas-logo-maji-kwa-watoto-foundation.png" alt="stiching waterpas">
+          <p>Donate through our trusted partner</p></a>
+        </div><!--end of the partner-->
+       </div><!--end of partners row-->
+     
+    
 
 
 
 
 
   </body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-    <!-- <script>
-     (function(){
-      emailjs.init("mv36TlOze_qyLMwmk"); // Replace with your EmailJS user ID
-     })();
-     document.querySelector('.subscribe-container').addEventListener('submit', function(event) {
-          event.preventDefault(); // Prevent the default form submission
-
-          emailjs.sendForm('service_cv5v8st', 'template_kl7noza', this)
-              .then(function() {
-                  alert('Thank you for subscribing!'); // Success message
-              }, function(error) {
-                  alert('Failed to send. Please try again.'); // Error message
-                  console.log('FAILED...', error);
-              });
-      });
-     </script> -->
-
-   
-   
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="js/Navbar & inpage functionalities.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <script src="js/thirdpartyfunctions.js"></script> 
 
   </body>
 </html>
-<html></html>

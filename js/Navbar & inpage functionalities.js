@@ -27,14 +27,13 @@ window.addEventListener('click', (event) => {
       toggler.classList.remove('active');
   }
   //ADJUST TO MAKE CLICK OUTSIDE SEACH INPUT ALSO CLOSES IT --CHANGE AND UNDERSTAND IF PART
-
+  if (!searchButton.contains(event.target) && !searchInput.contains(event.target) && !closeButton.contains(event.target) ) {
+    searchContainer.classList.remove('active');
+    searchInput.classList.remove('show');
+    closeButton.classList.remove('show');
+  }
   
-//   if (!navbarContent.contains(event.target) && !toggler.contains(event.target)) {
-//     searchContainer.classList.remove('active');
-  // searchInput.classList.remove('show');
-  // closeButton.classList.remove('show');
 
-// }
 });
 
 // OPENING AND CLOSING THE SEARCH INPUT AND CLOSE BUTTON

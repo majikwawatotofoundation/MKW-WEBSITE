@@ -1,63 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Under Construction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Kibo Restaurant in Watamu, offering a vibrant seafood dining experience with fresh, ocean-sourced dishes, stunning beachfront views, and sustainable practices.">
+    <meta name="keywords" content="Maji kwa watoto Foundation.">
 
-        .banner {
-            background-color: #007BFF;
-            color: white;
-            padding: 20px;
-            width: 100%;
-        }
+    <meta name="robots" content="index, follow">
 
-        h1 {
-            font-size: 2em;
-            margin-top: 20px;
-            color: #333;
-        }
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="" sizes="32x32" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
 
-        p {
-            color: #666;
-            margin-bottom: 30px;
-        }
+    <title>Maji Kwa Watoto Foundation</title>
+    
+  </head> 
+  <body>
+   
+     <div class="header-background "> 
+      <nav class="navbar">
+        <div class="nav-elements container fluid">
+          <div class="button-wrapper">
+          
+            <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation" aria-label="Toggle navigation">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              </button>
+          </div>
+          <div class="search-container" >
+            <input type="text" id="search-input" class="search-input form-control me-2" placeholder="Search site...">
+            <button id="search-btn" class="search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+            <button id="close-btn" class="close-btn">&times;</button>
+          </div> 
+        
+          
+          <div id="navbar-content" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="outreach.html">OUTREACH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="impact.html"> OUR IMPACT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  GET INVOLVED
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
+                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="blank">DONATE THROUGH OUR SPONSORS</a></li>
+                  <!-- <li><hr class="dropdown-divider"> </li> -->
+                  <li><a class="dropdown-item" href="#">VOLUNTEER</a></li>
+                  <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
+                </ul>
+                
+              </li>
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+              <li>
+                
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                  AFFILIATES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
+                  <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
+                </ul>
+                
+              </li>
+               
+              
+            </ul>
+            
+           </div>
+        </div><!---end of nav-elements-->
+       
+         
+        
+        </nav>
+        
+      <a href="index.html" class="watoto-logo" >
+          <img src="photos/logo-maji-kwa-watoto.png">
+          </a>
+          <img class="image-background" src="photos/light-grey-maji-kwa-watoto-foundation1.png">
+            <div class="back-links"><a href="index.html"><h4> Home</h4></a> 
+              <h4>The difference</h4></div>   
+    </div> <!--END OF NAVBAR AND VIDEO BACKGROUND-->
+    <div class="team-text container-fluid"> <p>Since its founding, MKW has supplied over 8 million litres of purified drinking water to schools and community centres, benefiting more than 32,000 children across 55 institutions. Access to safe drinking water has transformed these schools by reducing absenteeism due to water-borne illnesses, creating healthier learning environments and fostering educational success.
+      The journey hasn’t been without challenges; for instance, some deserving schools lack water storage tanks, limiting our reach. However, thanks to Stichting Waterpas and the Wild Geese Foundation’s support, MKW was able to overcome logistical obstacles with the acquisition of a specialized 10,000-liter truck, enabling us to transport water more effectively. MKW remains dedicated to expanding our impact, reaching new institutions, and overcoming challenges that stand between children and their right to clean water.
+      
+      </p></div>
 
-        .back-button {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+      <div class="row"> <!---THIS PICS WILL BE LOADED LAST FROM A JSON TO REDUCE THE LOAD TIME-->
+        <div class="snapshot col-6 col-md-4 col-lg-3">
+          <img src="photos/children-drinking-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 5">
+          <div class="overlay">Little girls sip water by the tank, shy smiles lighting up their faces.</div>
+        </div>
+        <div class="snapshot col-6 col-md-4 col-lg-3">
+          <img src="photos/children-enjoying-healthy-clean-drinking-water.jpg" alt="Snapshot 6">
+          <div class="overlay">School 6</div>
+        </div>
+        <div class="snapshot col-6 col-md-4 col-lg-3">
+          <img src="photos/children-mkw.jpeg" alt="Snapshot 7">
+          <div class="overlay">School 7</div>
+        </div>
+        <div class="snapshot col-6 col-md-4 col-lg-3">
+          <img src="photos/children-fetching-WATER-maji-kwa-watoto-foundation.jpg" alt="Snapshot 8">
+          <div class="overlay">School 8</div>
+        </div>
+      </div><!--END OF HIGLIGHT CONTAINER-->
+      <form class="subscribe-container mb-2">
+            
+        <h3> We send periodical Newsletters</h3>
+        <h5>Email adress*</h5>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit"><p>Subscribe Now</p></button>
+      </form>
+      <div class="donate">
+        <img src="photos/donate-maji-kwa-watoto-foundation.jpeg" alt="donate" class="donate-background">
+        <h2 >SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN </h2>
+        <a href="involved.html" class="mkw"  ><h2>DONATE THROUGH US</h2></a>
+        <div class="involved"><h2>DONATE THROUGH OUR PARTNER</h2></div>
+        <div class="partners row"><!--WHEN WE GET MORE PATNERS I WILL PUT A CAROUSEL OF CLICKABLE PATRNERS LOGOS TO DONATION PAGES-->
+          <div class="thepartner mx-1 col-sm-12">
+            <a href="https://www.stichtingwaterpas.nl/" target="_blank" >
+            <img src="photos/waterpas-logo-maji-kwa-watoto-foundation.png" alt="stiching waterpas">
+            <p>Donate through our trusted partner</p></a>
+          </div><!--end of the partner-->
+         </div><!--end of partners row-->
+  
 
-        .back-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
 
-    <div class="banner">
-        <h1>PAGE UNDER CONSTRUCTION</h1>
-    </div>
+     <!--END OF MAIN BODY-->
+     <footer  class="fdesign" id="">
+        <!--FIND FOOTER DESIGNS AT https://www.pinterest.com/pin/166281411232877013/-->
+    </footer> 
 
-    <p>Content Coming Soon! We’re working hard to bring you this page.</p>
 
-    <a href="index.html" class="back-button">Back to Homepage</a>
 
+
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="js/Navbar & inpage functionalities.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script src="js/thirdpartyfunctions.js"></script>
 </body>
 </html>
