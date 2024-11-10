@@ -1,6 +1,7 @@
 body{
     background:rgb(247, 238, 238);
-    font: size 20px;
+    font-size: 18px;
+    line-height: 1.8;
     
 }
 
@@ -9,10 +10,21 @@ body{
     width:100%;
     height:100vh;
     overflow:hidden;
-    z-index:1;
+    z-index:0;
+    
 }
 
+.header-background{
+  position:relative;
+  z-index:1;
+  width:100%;
+  height:70vh;
+  overflow:hidden;
+  margin-bottom:3px;
+ 
+}
 
+/* Video or image background at the start of all webpage html*/
 .watoto-logo img{
     max-width:200px;
     height:auto;
@@ -29,8 +41,22 @@ body{
     position:absolute;
     top:0;
     left:0;
-    z-index:1;  
+    z-index:1; 
+    object-fit: cover;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease; /* Smooth fade-in for video */ 
 }
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: opacity 1s ease; /* Smooth fade-out transition */
+  z-index: 1; /* Make sure it sits above the video initially */
+}
+
 .video-text{
     position:absolute;
     top: 50%;
@@ -41,6 +67,47 @@ body{
     z-index: 2;
     width:80%;
 }
+
+.image-background{
+  width:100%;
+  height:70vh;
+  object-fit: cover;
+  top:0;
+  left:0;
+  position:absolute;
+  display:flex;
+}
+.back-links{
+  position:absolute;
+  z-index:2;
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  top:65%;
+  gap: 80px; /* Space between the two items */
+ 
+}
+.back-links h4{
+  margin:0;
+  color:white;
+  padding:20px;
+  text-decoration:none;
+  background-color: #2975c7;
+}
+.back-links a h4{
+  background-color: #007BFF;
+  color:white;
+}
+
+.back-links h4:hover{
+  text-decoration: solid;
+ 
+}
+
+
+
 .navbar {
   position:relative;
   display:flex;
@@ -123,7 +190,7 @@ body{
   height: 3px;
   background-color: #000000;
   transition: all 0.1s ease;
-  background-color: blue;
+  background-color: #2fe3e4;
   transition: background-color 0.3s ease;
 }
 .navbar-toggler.active .bar {
@@ -196,7 +263,7 @@ body{
 .close-btn{
   background:none;
   border:none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   display:none;
   position:absolute;
@@ -206,6 +273,7 @@ body{
 .search-container.active .search-input.show{
   width: 400px;
   opacity: 1;
+  
 }
 .search-container.active  .close-btn.show{
   display:block;
@@ -622,22 +690,33 @@ body{
     transform: translate(-50%, -50%); */
     z-index: 1;
     }
+    /* .donate-here-container ,.header-background{
+      ma
+    } */
+
+
+    .main-container {
+      position:relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; /* Ensures spacing between child elements */
+      margin-top:0;
+    
+    }
     .donate-here-container{
+
       position:relative;
       width:100%;
       height:auto;
       display:flex;
       align-items:center;
       justify-content: center;
-      margin-top:30px;
-
-      /* flex-direction:column; */
-    
-      /* margin-bottom:5px;
-      
-      align-items:center;
-      
-      text-align: center; */
+      display:flex;
+      /* margin-top:2px; */
+      background-color: #ffffff; /* Add a white background to differentiate from the header */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for separation */
+  
     }
     .donate-here{
       display:flex;
@@ -646,21 +725,13 @@ body{
       /* position:absolute; */
       text-align: center;
       flex-direction:column;
-      /* top:0%;
-      left:50%;
-      transform:translate(-0%, -50%); */
-      border:2px solid #233547;
-      padding-right:20px;
-      padding-left:20px;
+      display:flex;
+      padding: 20px;
+      background-color: #ffffff; /* Ensure the form has a solid background */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
     }
 
-    /* .donate-here input{
-      display:inline-block;
-      align-items:center;
-      justify-content: center;
-      margin-bottom:5px;
-      padding:5px;
-    } */
+   
     .name-input{
       display:flex;
       flex-direction: row;
@@ -760,6 +831,35 @@ body{
    .pal-donate a h4 {
     margin: 0; /* Ensure the h4 element inside the button doesn't have any extra margin */
   }
+  /* .team-text{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .team-text li{
+    display:flex;
+    
+  } */
+  .team-text {
+    display:flex;
+    flex-direction:column;
+    line-height:1.5;
+    /* font-size:14px; */
+    
+    
+  }
+  .team-text  h5 p{
+    /* display:flex; */
+    align-self: center; 
+    
+  }
+  .team-text ul li{
+    align-self:start;
+    /* line-height:0.2; */
+  }
+
+
+  
 
    
 
@@ -877,7 +977,9 @@ body{
   .search-container.active  .close-btn.show{
     display:block;
   }
-      
+  body {
+    font-size: 16px; /* Slightly smaller for tablets */
+ }
       
 
       
@@ -945,6 +1047,9 @@ body{
       font-size:0.9em;
       width: 95%; /* Extra narrow text width on smallest screens */
     }
+    body {
+      font-size: 14px; /* Optimal for smaller screens */
+   }
     
     
     }
