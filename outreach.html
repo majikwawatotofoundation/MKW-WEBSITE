@@ -5,13 +5,16 @@
    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Welcome to Kibo Restaurant in Watamu, offering a vibrant seafood dining experience with fresh, ocean-sourced dishes, stunning beachfront views, and sustainable practices.">
-    <meta name="keywords" content="Maji kwa watoto Foundation.">
+    <meta name="description" content="Maji Kwa Watoto Foundation in Mombasa, Kenya, provides clean water to schools, orphanages, and community centers, promoting children's health and reducing water-borne illnesses. Partnering with Dutch Water and local agencies, we deliver life-changing access to safe drinking water, hygiene education, and support for vulnerable institutions. Join us to bring clean water to those in need!">
+    <meta name="keywords" content="Kenya water foundation, Maji Kwa Watoto, clean water for schools, children's health, safe drinking water, water donations Kenya, hygiene education, community support, Stichting Waterpas">
+    
 
     <meta name="robots" content="index, follow">
 
-    <link rel="icon" href="" type="image/x-icon">
-    <link rel="icon" href="" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     
@@ -100,7 +103,10 @@
       <a href="index.html" class="watoto-logo" >
           <img src="photos/logo-maji-kwa-watoto.png">
           </a>
-          <img class="image-background" src="photos/light-grey-maji-kwa-watoto-foundation1.png">
+          <div class="watoto-banner slow-load banner-placeholder">
+            <img class="image-background" src="photos/light-grey-maji-kwa-watoto-foundation1.png">
+          </div>
+          
             <div class="back-links"><a href="index.html"><h4> Home</h4></a> 
               <h4>Our work</h4></div>  
     </div> <!--END OF NAVBAR AND VIDEO BACKGROUND-->
@@ -110,20 +116,26 @@
         </p></div>
         <div class="row"> <!---THIS PICS WILL BE LOADED LAST FROM A JSON TO REDUCE THE LOAD TIME-->
           <div class="snapshot col-6 col-md-4 col-lg-3">
-            <img src="photos/children-all-smiles-maji-kwa-watoto.jpeg" alt="Snapshot 1">
+            <div class="shimmer slow-load">
+              <img data-src="photos/children-all-smiles-maji-kwa-watoto.jpeg" alt="Snapshot 1"></div>
             <div class="overlay">Joyful children pose with deuces and playful hand signs, beaming at the camera.</div>
           </div>
           <div class="snapshot col-6 col-md-4 col-lg-3">
-            <img src="photos/New-dutch-water's-GM-maji-kwa-watoto.jpg" alt="Snapshot 2">
+            <div class="shimmer slow-load">
+              <img data-src="photos/New-dutch-water's-GM-maji-kwa-watoto.jpg" alt="Snapshot 2"></div>
+            
             <div class="overlay">School 2</div>
           </div>
           <div class="snapshot col-6 col-md-4 col-lg-3">
-            <img src="photos/two-visitors-maji-kwa-watoto-foundation (1).jpeg" alt="Snapshot 3">
+            <div class="shimmer slow-load">
+              <img data-src="photos/two-visitors-maji-kwa-watoto-foundation (1).jpeg" alt="Snapshot 3"></div>
+            
             <div class="overlay">Our visitors share smiles and high-fives, spreading love to eager hands.</div>
           </div>
           <div class="snapshot col-6 col-md-4 col-lg-3">
-            <img src="photos/children-at-assembly-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 4">
+            <div class="shimmer slow-load"><img data-src="photos/children-at-assembly-maji-kwa-watoto-foundation.jpeg" alt="Snapshot 4"></div>
             <div class="overlay">School 4</div>
+          </div>
           </div> 
         </div><!--END OF HIGLIGHT CONTAINER-->
         <form class="subscribe-container mb-2">
@@ -145,12 +157,73 @@
               <p>Donate through our trusted partner</p></a>
             </div><!--end of the partner-->
            </div><!--end of partners row-->
+          </div> <!--end of donate-->
+           
+
+
+          <footer class="mt-3 container-fluid fdesign" >
+           <div class=" f-contents row  mt-2">
+             <div class="col-sm-12 col-md-3 ">
+               <a href="index.html" id="mkw-logo" >
+                 <img src="photos/logo-maji-kwa-watoto.png">
+                 </a>
+               <span class="separate-footer d-block d-sm-none font-weight-bold" > <hr> </span>
+             </div>
+               
+             <div class="col-sm-12 col-md-3  links">
+              <a href="outreach.html"><h5 class="text-uppercase font-weight-bold mb-3">OUTREACH</h5></a> 
+              <a href="impact.html"><h5 class="text-uppercase font-weight-bold mb-3">IMPACT</h5></a>
+              <a href="involved.html"><h5 class="text-uppercase font-weight-bold mb-3">GET INVOLVED</h5></a>
+               
+              <span class="separate-footer d-block d-sm-none font-weight-bold"> <hr> </span>
+             </div>
+       
+             <div class="col-sm-12 col-md-3  time-location">
+               <h5 class="text-uppercase  font-weight-bold ">OPEN HOURS:</h5>
+               <p>
+                 DAILY 
+                 7:00AM- 4:30PM.
+               </p>
+               <h5 class="text-uppercase font-weight-bold ">LOCATION:</h5>
+               <p>
+                 <p>
+                   Unnamed Road, Mtwapa.
+               </p>
+               <span class="separate-footer d-block d-sm-none font-weight-bold" > <hr> </span>
+             </div>
+       
+             <div class="col-sm-12 col-md-3 contacts">
+               <h5 class="text-uppercase mb-2 font-weight-bold ">CONTACTS</h5>
+               
+               <div class="col-sm-12 col-md-3  info"><a style="text-decoration:none;" href="tel:0721721878"> <i class="bi bi-telephone-fill" ></i> <span>+254721721878</span></a></div>
+               <div class="col-sm-12 col-md-3 info"><a style="text-decoration:none;" href="tel:0729465138"> <i class="bi bi-telephone-fill" ></i> <span>+254729465138</span></a></div>
+               <div class="col-sm-12 col-md-3 info" id=""><a style="text-decoration:none;" href="mailto:majikwawatotofoundation@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> <span class="email-hide">majikwawatotofoundation@gmail.com</span></a></div>
+               <span class="separate-footer d-block d-sm-none font-weight-bold"> <hr> </span>
+             </div>
+             
+               
+     
+           
+             </div><!--end of f-contents div-->
+             <div class="row last-row">
+               <div class="socials">
+                 <a href="" target="blank"  class="text-white" style="text-decoration:none;"><i class="bi bi-facebook"></i> Facebook</a> 
+                 <a href="" class="text-white" target="blank" style="text-decoration:none;"><i class="bi bi-instagram"></i> Instagram</a>
+                 <a href="" class="text-white" target="blank" style="text-decoration:none;"><i class="bi bi-linkedin"></i> Linkedin</a>
+                 <a href="" class="text-white" target="blank" style="text-decoration:none;"> <i class="bi bi-twitter-x"></i>Twitter</a>
+                 <a href="" class="text-white" target="blank" style="text-decoration:none;"></i><i class="bi bi-tiktok"></i> Tiktok</a>
+                 
+               </div>
+               <div class="the-end">
+                 <i class="bi bi-c-circle"> </i> <span>Copyright Maji Kwa Watoto Foundation 2024</span>
+               </div>
+               
+             </div><!--end of last-row div-->
+           
+         </footer> 
     
 
-     <!--END OF MAIN BODY-->
-     <footer  class="fdesign" id="">
-        <!--FIND FOOTER DESIGNS AT https://www.pinterest.com/pin/166281411232877013/-->
-</footer> 
+     
 
 
 
@@ -164,6 +237,8 @@
 <script src="js/Navbar & inpage functionalities.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
 <script src="js/thirdpartyfunctions.js"></script>
+<script src="js/lazy-loading.js"></script>
+<script src="js/slowbanner.js"></script>
 </body>
 </html>
 <!-- <P>
