@@ -31,21 +31,60 @@ body{
     position:absolute;
     top: 15px;
     left:15px;
-    z-index:2;
+    z-index:1000;
+    opacity:1;
     
 }
-.watoto-video{
-    width:100%;
-    height:auto;
-    object-fit:cover;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:1; 
-    object-fit: cover;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 1s ease; /* Smooth fade-in for video */ 
+body{
+  background:rgb(247, 238, 238);
+  font-size: 18px;
+  line-height: 1.8;
+  
 }
+
+.video-background{
+  position:relative;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  z-index:0;
+  
+}
+
+.header-background{
+position:relative;
+z-index:1;
+width:100%;
+height:70vh;
+overflow:hidden;
+margin-bottom:3px;
+}
+
+/* Video or image background at the start of all webpage html*/
+.watoto-logo img {
+  max-width:200px;
+  height:auto;
+  position:absolute;
+  top: 15px;
+  left:15px;
+  z-index:10;
+  opacity:1;
+
+}
+.watoto-video{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2; 
+  object-fit: cover;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease; /* Smooth fade-in for video */ 
+}
+
+ 
 .video-placeholder {
   position: absolute;
   top: 0;
@@ -53,8 +92,11 @@ body{
   width: 100%;
   height: 100%;
   background-color: black;
-  transition: opacity 1s ease; /* Smooth fade-out transition */
-  z-index: 1; /* Make sure it sits above the video initially */
+  opacity: 1;
+   /* Start as hidden for a smooth transition */
+  transition: opacity 1s ease; 
+  /* Smooth fade-out transition */
+  z-index:2;
 }
 
 .video-text{
@@ -66,9 +108,21 @@ body{
     color:white;
     z-index: 2;
     width:80%;
+    opacity:0;
 }
 
-.image-background{
+
+/* .video-text{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+    z-index: 2;
+    width:80%;
+} */
+.watoto-banner img{
   width:100%;
   height:70vh;
   object-fit: cover;
@@ -77,6 +131,23 @@ body{
   position:absolute;
   display:flex;
 }
+.banner-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+   /* Start as hidden for a smooth transition */
+  transition: opacity 1s ease; 
+  /* Smooth fade-out transition */
+  z-index:2;
+}
+
+/* .image-background{
+ 
+} */
 .back-links{
   position:absolute;
   z-index:2;
@@ -124,14 +195,14 @@ body{
   right:15px;
   padding:10px;
   position:absolute;
-  z-index:3;
+  z-index:5;
 }
 .navbar-collapse{
   top:80px;
   right:70px;
   padding:10px;
   position: absolute;
-  z-index:4;
+  z-index:5;
   background-color: #0078C8;
   width:300px;
   height:auto;
@@ -245,7 +316,7 @@ body{
   position: absolute;
   right: 30px;/* adjust as needed*/
   top: 100%;
-  z-index:2;
+  z-index:5;
   transform: translateY(-0%);
 }
 .search-btn{
@@ -254,7 +325,7 @@ body{
   cursor: pointer;
   font-size: 2rem;
   position:absolute;
-  z-index:3;
+  z-index:5;
 }
 
 .search-btn i{
@@ -369,12 +440,6 @@ body{
 .involved-tile a p{
     margin: 0;
 }
-.happening-next{
-    position:relative;
-}
-/* .happening-next-wrp{
-    
-} */
 .heading-next{
     width:700px;
     height:100px;
@@ -436,7 +501,7 @@ body{
     display:block;
   }
   
-  .t-next-2 {
+  .t-next-2  {
     flex: 0 0 30%; /* Takes 100% of the available width */
     flex-direction: column; /* Stacks the two images vertically */
     gap: 10px; /* Adds space between the two images */
@@ -506,6 +571,16 @@ body{
     margin-bottom:5px;
     padding-right:1px;
 
+  }
+ 
+  .snapshot .shimmer {
+    display: flex;
+    /* Ensure the shimmer covers the whole space of snapshot */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional shimmer background */
   }
   
   .snapshot img {
@@ -857,7 +932,57 @@ body{
     align-self:start;
     /* line-height:0.2; */
   }
+  /* Shimmer effect styles */
+  .shimmer::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  opacity: 1; /* Show shimmer initially */
+  z-index: 2; /* Ensure shimmer is on top of the image *
+  transition: opacity 0.5s ease-in; /* Smooth fade-in */
+}
+/* Fade-out effect on load */
+.slow-load img.finished-loading + .shimmer::before {
+  opacity: 0; /* Hide shimmer after the image loads */
+}
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+ /* .slow-load img, h2, a{
+  display:none;
+ } */
+
+ .finished-loading {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  z-index: 1; /* Ensure image appears above the shimmer once loaded */
+}
+
+/* .finished-loading img, h2, a{
+  display:block;
+ } */
+
+
+
+
+ 
 
   
 
@@ -870,6 +995,14 @@ body{
 
 
 /* MEDIA QUERIES*/
+@media(max-width:1200px){
+
+
+ .info .email-hide {
+    font-size: 0.6rem; /* Slightly reduce font size for the email */
+  }
+}
+
     @media(max-width:992px){
         .foundation-face-tiles{
             flex-direction:column;
@@ -891,6 +1024,9 @@ body{
         .t-next-1{
             flex: 0 0 100%;
             height:80vh;
+        }
+        .updates img{
+          height:60vh;
         }
        
         .t-next-2{
@@ -980,6 +1116,16 @@ body{
   body {
     font-size: 16px; /* Slightly smaller for tablets */
  }
+ .f-contents .row{
+  align-items:center;
+  
+ }
+ .info .email-hide {
+  font-size: 0.9rem; /* Slightly reduce font size for the email */
+}
+
+ 
+   
       
 
       
@@ -1011,6 +1157,20 @@ body{
       .pal-donate a h4{
        font-size:1em;
        }
+       .socials {
+       font-size: 1em;
+        
+        }
+        .socials i{
+          font-size:1rem;
+          
+         
+        }
+        .the-end{
+     
+         font-size: 0.6em;
+        
+        }
        /* Smaller padding for compact view */
     /* .navbar-collapse {
       padding: 15px;
@@ -1050,7 +1210,109 @@ body{
     body {
       font-size: 14px; /* Optimal for smaller screens */
    }
+   .socials {
+    font-size: 0.9em;
+     
+     }
+     .socials i{
+       font-size:0.8rem;
+       
+      
+     }
+     .the-end{
+  
+      font-size: 0.5em;
+     
+     }
     
+    
+    }
+
+    .fdesign{
+      background-color:#2975c7 ;
+      color:black;
+      display:flex;
+      /* justify-content: center; */
+      align-items: center; 
+      flex-direction: column;
+    }
+
+    .f-contents .row {
+      display: flex;
+      flex-wrap: wrap; /* Ensures items wrap to the next row on smaller screens */
+      justify-content: space-between; /* Centers horizontally */
+      align-items: center; /* Centers vertically */
+      margin: 0 auto; /* Centers the row container itself */
+      width: 100%; /* Ensures the row takes up full width */
+      gap: 15px; /* Adds space between items */
+    }
+    
+    .f-contents .col-sm-12 {
+      display: flex;
+      flex-direction: column; /* Ensures content stacks vertically inside each column */
+      align-items: center; /* Centers content within each column */
+      text-align: center; /* Ensures text inside is centered */
+    }
+    
+    #mkw-logo img{
+      max-width: 200px;
+      height:auto;
+
+    }
+    .links a, .time-location h5, .contacts h5 {
+      color:white;
+      text-decoration:none;
+    }
+    .links a:hover{
+      text-decoration:underline;
+    
+    }
+ 
+    .time-location p{
+      color:black;
+    }
+  
+    .contacts span{
+      color:black;
+    }
+    
+    .info a {
+      display: flex; /* Enables flexbox for horizontal alignment */
+      align-items: center; /* Vertically centers the icon and text */
+      gap: 5px; /* Adds spacing between the icon and text */
+      
+    }
+    .info i{
+      margin:0;
+      padding:0;
+      color:white;
+      font: size 1.3rem;
+    
+    }
+
+    .last-row {
+      display:flex;
+      flex-direction:row ;
+      align-items: center;
+      color:white;
+    }
+    .socials {
+    display:flex;
+    justify-content: space-between;
+    
+    }
+    .socials i{
+      font-size:2rem;
+      
+     
+    }
+
+    .the-end{
+     
+      display:flex;
+      align-items: center; /* Vertically centers the icon and text */
+      gap: 5px; /* Adds spacing between the icon and text */
+      justify-content: center;
     
     }
   
