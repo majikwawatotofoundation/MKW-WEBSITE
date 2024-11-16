@@ -42,25 +42,52 @@ const slowLoadImages = () => {
     }
   }
 };
+// Function to dynamically create a canvas fallback image
+const createCanvasFallback = (video) => {
+  const canvas = document.createElement('canvas');
+  canvas.width = video.videoWidth || 1280; // Default width if metadata isn't available
+  canvas.height = video.videoHeight || 720; // Default height
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(video, 0, 0, canvas.width, canvas.height); // Capture the video frame
+  return canvas.toDataURL('image/jpeg'); // Convert canvas content to base64 image URL
+};
 
 // Function to lazy-load videos
 const slowLoadVideo = () => {
   const videoElements = document.querySelectorAll('.watoto-video');
   const placeholder = document.querySelector('.video-placeholder');
-  const videoText = document.querySelector('.video-text');
+  // const videoText = document.querySelector('.video-text');
 
   for (let i = 0; i < videoElements.length; i++) {
     const media = videoElements[i];
     const src = media.getAttribute('data-src');
 
     if (src && isElementInViewport(media)) {
-      media.src = src; // Set the video source
-      placeholder.style.opacity = '0'; // Hide placeholder
-      media.classList.add('finished-loading'); // Add fade-in transition
-      videoText.style.opacity = '1'; // Make text visible
-      media.style.opacity = '1'; // Make video visible
+      let isMediaLoaded = false; // Track if the video loads in time
+      
+      // Set a timeout to handle slow loading or slow connections
+      const timeout = setTimeout(() => {
+        if (!isMediaLoaded) {
+          console.log(`Using fallback for slow video load: ${src}`);
+          const fallbackImage = createCanvasFallback(media);
+          const img = document.createElement('img');
+          img.src = fallbackImage; // Assign fallback image
+          img.className = 'video-fallback'; // Add a class for styling
+          video.parentNode.replaceChild(img, media); // Replace video with the fallback
+        }
+      }, 4000); // Timeout duration (4 seconds)
 
-      console.log(`Video loaded successfully: ${src}`);
+      // Load the video
+      media.src = src; // Set the video source
+      media.addEventListener('loadeddata', () => {
+      clearTimeout(timeout); // Cancel fallback logic if video loads
+      isMediaLoaded = true;
+      placeholder.style.opacity = '0'; // Hide placeholder
+      // media.classList.remove('video-placeholder'); // Remove placeholder class
+      media.classList.add('finished-loading'); // Add fade-in transition
+       media.style.opacity = '1'; // Ensure video is visible
+        console.log(`Video loaded successfully: ${src}`);
+      });
     }
   }
 };

@@ -83,6 +83,13 @@ margin-bottom:3px;
   opacity: 0; /* Initially hidden */
   transition: opacity 1s ease; /* Smooth fade-in for video */ 
 }
+.watoto-video:not(.video-placeholder) {
+  opacity: 1; /* Make video visible when placeholder class is removed */
+}
+/* .video-container{
+   position: relative;
+ 
+} */
 
  
 .video-placeholder {
@@ -98,6 +105,11 @@ margin-bottom:3px;
   /* Smooth fade-out transition */
   z-index:2;
 }
+.video-fallback {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 .video-text{
     position:absolute;
@@ -108,7 +120,7 @@ margin-bottom:3px;
     color:white;
     z-index: 2;
     width:80%;
-    opacity:0;
+    opacity:1;
 }
 
 
