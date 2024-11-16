@@ -42,20 +42,13 @@ const slowLoadImages = () => {
     }
   }
 };
-// Function to dynamically create a canvas fallback image
-const createCanvasFallback = (video) => {
-  const canvas = document.createElement('canvas');
-  canvas.width = video.videoWidth || 1280; // Default width if metadata isn't available
-  canvas.height = video.videoHeight || 720; // Default height
-  const ctx = canvas.getContext('2d');
-  ctx.drawImage(video, 0, 0, canvas.width, canvas.height); // Capture the video frame
-  return canvas.toDataURL('image/jpeg'); // Convert canvas content to base64 image URL
-};
+
 
 // Function to lazy-load videos
 const slowLoadVideo = () => {
   const videoElements = document.querySelectorAll('.watoto-video');
   const placeholder = document.querySelector('.video-placeholder');
+  const fallbackImage = document.querySelector('.video-fallback');
   // const videoText = document.querySelector('.video-text');
 
   for (let i = 0; i < videoElements.length; i++) {
@@ -69,11 +62,8 @@ const slowLoadVideo = () => {
       const timeout = setTimeout(() => {
         if (!isMediaLoaded) {
           console.log(`Using fallback for slow video load: ${src}`);
-          const fallbackImage = createCanvasFallback(media);
-          const img = document.createElement('img');
-          img.src = fallbackImage; // Assign fallback image
-          img.className = 'video-fallback'; // Add a class for styling
-          video.parentNode.replaceChild(img, media); // Replace video with the fallback
+          fallbackImage.style.opacity ='1';
+          media.parentNode.replaceChild(fallbackImage.cloneNode(true), media);  //I DONT UNDERSTAND THIS ATLLA
         }
       }, 4000); // Timeout duration (4 seconds)
 

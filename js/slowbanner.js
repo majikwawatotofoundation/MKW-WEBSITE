@@ -21,7 +21,7 @@ const slowLoadBannerImages = () => {
         const src = img.getAttribute('data-src');
         
   
-      if (src && isElementInViewport(bannerWrapper)) {
+      if (src && isElementInViewarea(bannerWrapper)) {
         // Preload image
         const tempImage = new Image();
         tempImage.src = src;
