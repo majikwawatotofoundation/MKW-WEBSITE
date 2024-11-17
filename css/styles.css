@@ -75,12 +75,12 @@ margin-bottom:3px;
   opacity:1;
 
 }
-.video-container {
+/* .video-container {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
+} */
 
 
 .watoto-video,.video-fallback{
@@ -91,14 +91,15 @@ margin-bottom:3px;
   top:0;
   left:0;
   object-fit: cover;
-  opacity: 0; /* Initially hidden */
+
   transition: opacity 1s ease; /* Smooth fade-in for video */ 
 }
 .video-fallback {
   z-index: 1; /* Place behind the video */
+  opacity: 1;
 }
 .watoto-video {
-  z-index: 2; /* Video over fallback */
+  z-index: 3; /* Video over fallback */
   opacity: 0; /* Initially hidden */
   transition: opacity 1s ease; /* Smooth fade-in for video */
 }

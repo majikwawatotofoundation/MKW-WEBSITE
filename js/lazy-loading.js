@@ -47,39 +47,36 @@ const slowLoadImages = () => {
 // Function to lazy-load videos
 const slowLoadVideo = () => {
   const videoElements = document.querySelectorAll('.watoto-video');
-  const placeholder = document.querySelector('.video-placeholder');
-  const fallbackImage = document.querySelector('.video-fallback');
+  
   // const videoText = document.querySelector('.video-text');
 
   for (let i = 0; i < videoElements.length; i++) {
     const media = videoElements[i];
     const src = media.getAttribute('data-src');
-
+    const placeholder = document.querySelector('.video-placeholder');
+    const fallbackImage = document.querySelector('.video-fallback');
+   
     if (src && isElementInViewport(media)) {
-      let isMediaLoaded = false; // Track if the video loads in time
-      
-      // Set a timeout to handle slow loading or slow connections
-      const timeout = setTimeout(() => {
-        if (!isMediaLoaded) {
-          console.log(`Using fallback for slow video load: ${src}`);
-          fallbackImage.style.opacity ='1';
-          media.parentNode.replaceChild(fallbackImage.cloneNode(true), media);  //I DONT UNDERSTAND THIS ATLLA
-        }
-      }, 4000); // Timeout duration (4 seconds)
+      media.src = src; 
+      media.load(); // Start loading the video
+   // Placeholder fades out after 2 seconds and lowers z-index
+    setTimeout(() => {
+      placeholder.style.zIndex = '0';
+    }, 2000);
 
-      // Load the video
-      media.src = src; // Set the video source
-      media.addEventListener('loadeddata', () => {
-      clearTimeout(timeout); // Cancel fallback logic if video loads
-      isMediaLoaded = true;
-      placeholder.style.opacity = '0'; // Hide placeholder
-      // media.classList.remove('video-placeholder'); // Remove placeholder class
-      media.classList.add('finished-loading'); // Add fade-in transition
-       media.style.opacity = '1'; // Ensure video is visible
-        console.log(`Video loaded successfully: ${src}`);
-      });
+      media.addEventListener('canplaythrough', () =>  {
+        media.classList.add('finished-loading'); // Add fade-in transition
+        media.style.opacity = '1'; // Ensure video is visible
+        fallbackImage.style.opacity ='0';
+         console.log(`Video loaded successfully: ${src}`);
+      }); 
+      
+    }else {
+     // Show fallback image and keep placeholder visible if video is not ready
+     fallbackImage.style.opacity = '1';
+     console.log('Video not in viewport or missing src, showing fallback.');
     }
-  }
+  };
 };
 
 
