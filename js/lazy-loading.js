@@ -86,7 +86,7 @@ window.addEventListener('scroll', slowLoadImages);
 window.addEventListener('resize', slowLoadImages);
 window.addEventListener('load', slowLoadImages);
 
-// window.addEventListener('scroll', slowLoadVideo);
+window.addEventListener('scroll', slowLoadVideo);
 window.addEventListener('resize', slowLoadVideo);
 window.addEventListener('load', slowLoadVideo);
 
