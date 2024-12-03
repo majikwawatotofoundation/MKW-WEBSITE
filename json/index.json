@@ -1,0 +1,747 @@
+{
+    "index-content": {
+      "video-text": {
+        "h1": "Bringing Life and Hope to Our Children",
+        "p": "Delivering healthy drinking water to brighten children's smiles and secure their future"
+      },
+      "foundation-face-tiles": [
+        {
+          "title": "OUTREACH",
+          "img-src": "photos/outreach-to-schools-maji-kwa-watoto-foundation.jpeg",
+          "link": "outreach.html",
+          "description": "Discover Our Work"
+        },
+        {
+          "title": "OUR IMPACT",
+          "img-src": "photos/impact3-maji-watoto-foundation.jpeg",
+          "link": "impact.html",
+          "description": "See the Difference"
+        },
+        {
+          "title": "GET INVOLVED",
+          "img-src": "photos/nlvisitor-with-children-maji-kwa-watoto-foundation.jpeg",
+          "link": "involved.html",
+          "description": "Join Us Today"
+        }
+      ],
+      "happening-next": {
+        "heading": "WHAT'S HAPPENING NEXT",
+        "events": [
+          {
+            "img-src": "photos/candidates-maji-kwa-watoto-foundation.jpeg",
+            "title": "Fresh water for all candidates!",
+            "subtitle": "Exams ongoing"
+          },
+          {
+            "img-src": "photos/christmas-maji-kwa-watoto-foundation.jpg",
+            "title": "Water for all at Our annual Christmas party!",
+            "subtitle": "December 1"
+          },
+          {
+            "img-src": "photos/clocks-clock-maji-kwa-watotot-foundation.jpg (1).jpg",
+            "title": "Looking back...!",
+            "subtitle": "👀"
+          }
+        ]
+      },
+      "latest-updates": {
+        "heading": "LATEST UPDATES",
+        "news": [
+          {
+            "img-src": "photos/light-grey-maji-kwa-watoto-foundation1.png",
+            "title": "Clean Water Boosts School Success: Better Health, Better Results",
+            "description": "Our water foundation has helped 10 schools improve mid-term exam results by ensuring students have access to clean water. In the past, many children missed lessons due to stomach issues from unsafe water or leaving school at lunchtime to get water from home. Now, with a lunch program and clean water, students stay refreshed, healthy, and focused on their studies. Join us on December 1st at Amkeni Primary School for a special prize giving day to celebrate this success"
+          }
+        ]
+      },
+      "highlight": {
+        "heading": "HIGHLIGHTS FROM OUR SCHOOLS",
+        "images": [
+          {
+            "img-src": "photos/children-all-smiles-maji-kwa-watoto.jpeg",
+            "alt-text": "Snapshot 1",
+            "overlay": "Joyful children pose with deuces and playful hand signs, beaming at the camera."
+          },
+          {
+            "img-src": "photos/New-dutch-water's-GM-maji-kwa-watoto.jpg",
+            "alt-text": "Snapshot 2",
+            "overlay": "School 2"
+          },
+          {
+            "img-src": "photos/two-visitors-maji-kwa-watoto-foundation (1).jpeg",
+            "alt-text": "Snapshot 3",
+            "overlay": "Our visitors share smiles and high-fives, spreading love to eager hands."
+          },
+          {
+            "img-src": "photos/children-at-assembly-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 4",
+            "overlay": "School 4"
+          },
+          {
+            "img-src": "photos/children-enjoying-healthy-clean-drinking-water.jpg",
+            "alt-text": "Snapshot 5",
+            "overlay": "Little girls sip water by the tank, shy smiles lighting up their faces."
+          },
+          {
+            "img-src": "photos/children-drinking-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 6",
+            "overlay": "School 6"
+          },
+          {
+            "img-src": "photos/children-mkw.jpeg",
+            "alt-text": "Snapshot 7",
+            "overlay": "School 7"
+          },
+          {
+            "img-src": "photos/children-fetching-WATER-maji-kwa-watoto-foundation.jpg",
+            "alt-text": "Snapshot 8",
+            "overlay": "School 8"
+          },
+          {
+            "img-src": "photos/boys-enjoying-healthy-clean-water-maji kwa watoto (2).jpeg",
+            "alt-text": "Snapshot 9",
+            "overlay": "School 9"
+          },
+          {
+            "img-src": "photos/children-lining-up-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 10",
+            "overlay": "School 10"
+          },
+          {
+            "img-src": "photos/shareholders-children-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 11",
+            "overlay": "School 11"
+          },
+          {
+            "img-src": "photos/children-with-dutch-water-staff.jpg",
+            "alt-text": "Snapshot 12",
+            "overlay": "School 12"
+          },
+          {
+            "img-src": "photos/children-mkw.jpeg",
+            "alt-text": "Snapshot 13",
+            "overlay": "School 13"
+          },
+          {
+            "img-src": "photos/children-skipping-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 14",
+            "overlay": "School 14"
+          },
+          {
+            "img-src": "photos/children-with-visitors-maji-kwa-watoto.jpeg",
+            "alt-text": "Snapshot 15",
+            "overlay": "School 15"
+          },
+          {
+            "img-src": "photos/children-games-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 16",
+            "overlay": "School 16"
+          }
+        ]
+      },
+      "subscribe-form": {
+        "heading": "We send periodical Newsletters",
+        "email-placeholder": "Enter your email",
+        "submit-text": "Subscribe Now"
+      },
+      "donate": {
+        "heading": "SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN",
+        "button-link": "involved.html",
+        "button-text": "DONATE THROUGH US",
+        "partner-heading": "DONATE THROUGH OUR PARTNER",
+        "partners": [
+          {
+            "img-src": "photos/waterpas-logo-maji-kwa-watoto-foundation.png",
+            "alt-text": "Stichting Waterpas",
+            "link": "https://www.stichtingwaterpas.nl/"
+          }
+        ]
+      },
+      "footer": {
+        "socials": [
+          {
+            "platform": "Facebook",
+            "link": "https://web.facebook.com/profile.php?id=61568727069373&_rdc=1&_rdr#",
+            "icon": "bi-facebook"
+          },
+          {
+            "platform": "Instagram",
+            "link": "https://www.instagram.com/majikwawatoto/",
+            "icon": "bi-instagram"
+          },
+          {
+            "platform": "Linkedin",
+            "link": "https://www.linkedin.com/company/105697083/admin/page-posts/published/",
+            "icon": "bi-linkedin"
+          },
+          {
+            "platform": "Twitter",
+            "link": "https://x.com/maji_kwa_watoto?t=e75nv-T0CuKIRmPWC4GfrA&s=09",
+            "icon": "bi-twitter-x"
+          },
+          {
+            "platform": "TikTok",
+            "link": "https://www.tiktok.com/@majikwawatoto?_t=8rf7Likcyoy&_r=1",
+            "icon": "bi-tiktok"
+          }
+        ],
+        "contact": {
+          "phone1": "+254721721878",
+          "phone2": "+254729465138",
+          "email": "majikwawatotofoundation@gmail.com",
+          "location": "Unnamed Road, Mtwapa",
+          "open-hours": "DAILY 7:00AM- 4:30PM"
+        },
+        "copyright": "Copyright Maji Kwa Watoto Foundation 2024"
+      }
+    },
+
+
+
+
+
+    "impact-content": {
+        "header": {
+          
+          "banner": {
+            "class": "watoto-banner slow-load banner-placeholder",
+            "img-src": "photos/thirsty-littleangle-maji-kwa-watoto-foundation.png"
+          },
+          "navigation": {
+            "links": [
+              {
+                "href": "index.html",
+                "text": "Home"
+              },
+              {
+                "text": "The difference"
+              }
+            ]
+          }
+        },
+        "team-text": {
+          "content": "Since its founding, MKW has supplied over 8 million litres of purified drinking water to schools and community centres, benefiting more than 32,000 children across 55 institutions. Access to safe drinking water has transformed these schools by reducing absenteeism due to water-borne illnesses, creating healthier learning environments and fostering educational success. The journey hasn’t been without challenges; for instance, some deserving schools lack water storage tanks, limiting our reach. However, thanks to Stichting Waterpas and the Wild Geese Foundation’s support, MKW was able to overcome logistical obstacles with the acquisition of a specialized 10,000-liter truck, enabling us to transport water more effectively. MKW remains dedicated to expanding our impact, reaching new institutions, and overcoming challenges that stand between children and their right to clean water."
+        },
+        "snapshots": [
+          {
+            "img-src": "photos/children-enjoying-healthy-clean-drinking-water.jpg",
+            "alt": "Snapshot 5",
+            "overlay": "Little girls sip water by the tank, shy smiles lighting up their faces."
+          },
+          {
+            "img-src": "photos/children-drinking-maji-kwa-watoto-foundation.jpeg",
+            "alt": "Snapshot 6",
+            "overlay": "School 6"
+          },
+          {
+            "img-src": "photos/children-mkw.jpeg",
+            "alt": "Snapshot 7",
+            "overlay": "School 7"
+          },
+          {
+            "img-src": "photos/children-fetching-WATER-maji-kwa-watoto-foundation.jpg",
+            "alt": "Snapshot 8",
+            "overlay": "School 8"
+          }
+        ],
+        "newsletter-form": {
+          "headline": "We send periodical Newsletters",
+          "email-label": "Email address*",
+          "placeholder": "Enter your email",
+          "submit-text": "Subscribe Now"
+        },
+        "donate-section": {
+          "background-img": "photos/donate-maji-kwa-watoto-foundation.jpeg",
+          "heading": "SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN",
+          "donate-links": [
+            {
+              "href": "involved.html",
+              "text": "DONATE THROUGH US"
+            },
+            {
+              "text": "DONATE THROUGH OUR PARTNER"
+            }
+          ],
+          "partners": [
+            {
+              "link": "https://www.stichtingwaterpas.nl/",
+              "img-src": "photos/waterpas-logo-maji-kwa-watoto-foundation.png",
+              "alt": "stiching waterpas",
+              "text": "Donate through our trusted partner"
+            }
+          ]
+        },
+        "back-to-top-button": {
+          "id": "back-to-top",
+          "aria-label": "Back to Top",
+          "symbol": "&#8679;"
+        },
+        "footer": {
+          "sections": [
+            {
+              "class": "col-sm-12 col-md-3",
+              "logo": {
+                "href": "index.html",
+                "img-src": "photos/logo-maji-kwa-watoto.png"
+              }
+            },
+            {
+              "class": "col-sm-12 col-md-3 links",
+              "links": [
+                {
+                  "href": "outreach.html",
+                  "text": "OUTREACH"
+                },
+                {
+                  "href": "impact.html",
+                  "text": "IMPACT"
+                },
+                {
+                  "href": "involved.html",
+                  "text": "GET INVOLVED"
+                }
+              ]
+            },
+            {
+              "class": "col-sm-12 col-md-3 time-location",
+              "open-hours": "DAILY 7:00AM- 4:30PM",
+              "location": "Unnamed Road, Mtwapa"
+            },
+            {
+              "class": "col-sm-12 col-md-3 contacts",
+              "contact-info": [
+                {
+                  "href": "tel:0721721878",
+                  "icon": "bi bi-telephone-fill",
+                  "phone": "+254721721878"
+                },
+                {
+                  "href": "tel:0729465138",
+                  "icon": "bi bi-telephone-fill",
+                  "phone": "+254729465138"
+                },
+                {
+                  "href": "mailto:majikwawatotofoundation@gmail.com",
+                  "icon": "fa fa-envelope",
+                  "email": "majikwawatotofoundation@gmail.com"
+                }
+              ]
+            }
+          ],
+          "socials": [
+            {
+              "href": "https://web.facebook.com/profile.php?id=61568727069373&_rdc=1&_rdr#",
+              "icon": "bi bi-facebook",
+              "text": "Facebook"
+            },
+            {
+              "href": "https://www.instagram.com/majikwawatoto/",
+              "icon": "bi bi-instagram",
+              "text": "Instagram"
+            },
+            {
+              "href": "https://www.linkedin.com/company/105697083/admin/page-posts/published/",
+              "icon": "bi bi-linkedin",
+              "text": "Linkedin"
+            },
+            {
+              "href": "https://x.com/maji_kwa_watoto?t=e75nv-T0CuKIRmPWC4GfrA&s=09",
+              "icon": "bi bi-twitter-x",
+              "text": "Twitter"
+            },
+            {
+              "href": "https://www.tiktok.com/@majikwawatoto?_t=8rf7Likcyoy&_r=1",
+              "icon": "bi bi-tiktok",
+              "text": "Tiktok"
+            }
+          ],
+          "copyright": {
+            "text": "Copyright Maji Kwa Watoto Foundation 2024",
+            "icon": "bi bi-c-circle"
+          }
+        }
+      },
+
+      "involved-content": {
+        "watoto-banner": {
+          "slow-load": true,
+          "banner-placeholder": {
+            "image-background": {
+              "data-src": "photos/thirsty-littleangle-maji-kwa-watoto-foundation.png"
+            }
+          }
+        },
+        "back-links": {
+          "links": [
+            {
+              "href": "index.html",
+              "text": "Home"
+            },
+            {
+              "text": "Welcome aboard!"
+            }
+          ]
+        },
+        "main-container": {
+          "donate-here-container": {
+            "form": {
+              "title": "Your Message and Donation",
+              "description": "We invite you to share a personal message or comment along with your donation. Your support means a lot to us, and your words inspire our mission. Rest assured, your personal details will be stored securely and never shared without your permission.",
+              "inputs": [
+                {
+                  "type": "text",
+                  "class": "name-input1",
+                  "placeholder": "First Name*"
+                },
+                {
+                  "type": "text",
+                  "class": "name-input2",
+                  "placeholder": "Last Name*"
+                },
+                {
+                  "type": "text",
+                  "class": "email-input",
+                  "placeholder": "Enter your Email adress*"
+                },
+                {
+                  "type": "text",
+                  "class": "comment-input",
+                  "placeholder": "Leave a comment"
+                }
+              ],
+              "submit-button": {
+                "class": "send",
+                "text": "SEND"
+              },
+              "donation-options": {
+                "mpesa": {
+                  "title": "Donate via Mpesa",
+                  "mpesa-details": {
+                    "paybill": "552800",
+                    "account-number": "300440",
+                    "image": "photos/mpesa-logo-maji-kwa-watoto-foundation.png"
+                  }
+                },
+                "paypal": {
+                  "title": "Donate via Paypal",
+                  "link": "https://www.paypal.com/donate/?hosted_button_id=BUQCKW4QZLQSE",
+                  "image": "photos/paypal-logo-maji-kwa-watoto.png",
+                  "button-text": "Donate Now"
+                }
+              }
+            }
+          },
+          "team-text": {
+            "description": "Join us in making a difference! Whether through donations, volunteering, or spreading awareness, your support brings safe drinking water to more children.",
+            "ways-to-contribute": [
+              {
+                "title": "Sponsor a Water Tank",
+                "description": "With a one-time donation, help provide essential water storage for schools that currently lack infrastructure."
+              },
+              {
+                "title": "Monthly Water Supplies",
+                "description": "Fund a portion of the Ksh 4-per-liter cost to ensure uninterrupted water access for schools and centres."
+              },
+              {
+                "title": "General Contributions",
+                "description": "Donate through Stichting Waterpas Foundation or directly to MKW to support our ongoing efforts."
+              }
+            ],
+            "volunteer-opportunity": "You can also volunteer to help with community initiatives or environmental programs."
+          }
+        },
+        "subscribe-container": {
+          "title": "We send periodical Newsletters",
+          "inputs": [
+            {
+              "type": "email",
+              "name": "email",
+              "placeholder": "Enter your email",
+              "required": true
+            }
+          ],
+          "submit-button": {
+            "text": "Subscribe Now"
+          }
+        },
+        "donate": {
+          "image": "photos/donate-maji-kwa-watoto-foundation.jpeg",
+          "background-class": "donate-background",
+          "title": "SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN",
+          "button": {
+            "href": "involved.html",
+            "text": "DONATE THROUGH US"
+          },
+          "partner-info": {
+            "title": "DONATE THROUGH OUR PARTNER",
+            "partners": [
+              {
+                "link": "https://www.stichtingwaterpas.nl/",
+                "image": "photos/waterpas-logo-maji-kwa-watoto-foundation.png",
+                "description": "Donate through our trusted partner"
+              }
+            ]
+          }
+        },
+        "wait-donation": {
+          "button": {
+            "id": "back-to-top",
+            "aria-label": "Back to Top",
+            "symbol": "&#8679;"
+          }
+        },
+        "footer": {
+          "fdesign": {
+            "f-contents": {
+              "sections": [
+                {
+                  "class": "col-sm-12 col-md-3",
+                  "logo": {
+                    "href": "index.html",
+                    "image": "photos/logo-maji-kwa-watoto.png"
+                  }
+                },
+                {
+                  "class": "col-sm-12 col-md-3 links",
+                  "links": [
+                    {
+                      "href": "outreach.html",
+                      "text": "OUTREACH"
+                    },
+                    {
+                      "href": "impact.html",
+                      "text": "IMPACT"
+                    },
+                    {
+                      "href": "involved.html",
+                      "text": "GET INVOLVED"
+                    }
+                  ]
+                },
+                {
+                  "class": "col-sm-12 col-md-3 time-location",
+                  "open-hours": "DAILY 7:00AM-4:30PM",
+                  "location": "Unnamed Road, Mtwapa"
+                },
+                {
+                  "class": "col-sm-12 col-md-3 contacts",
+                  "contacts": [
+                    {
+                      "href": "tel:0721721878",
+                      "icon": "bi bi-telephone-fill",
+                      "number": "+254721721878"
+                    },
+                    {
+                      "href": "tel:0729465138",
+                      "icon": "bi bi-telephone-fill",
+                      "number": "+254729465138"
+                    },
+                    {
+                      "href": "mailto:majikwawatotofoundation@gmail.com",
+                      "icon": "fa fa-envelope",
+                      "email": "majikwawatotofoundation@gmail.com"
+                    }
+                  ]
+                }
+              ]
+            },
+            "last-row": {
+              "follow-us-title": "FOLLOW US",
+              "socials": [
+                {
+                  "platform": "Facebook",
+                  "link": "https://web.facebook.com/profile.php?id=61568727069373&_rdc=1&_rdr#",
+                  "icon": "bi bi-facebook"
+                },
+                {
+                  "platform": "Instagram",
+                  "link": "https://www.instagram.com/majikwawatoto/",
+                  "icon": "bi bi-instagram"
+                },
+                {
+                  "platform": "LinkedIn",
+                  "link": "https://www.linkedin.com/company/105697083/admin/page-posts/published/",
+                  "icon": "bi bi-linkedin"
+                },
+                {
+                  "platform": "Twitter",
+                  "link": "https://x.com/maji_kwa_watoto?t=e75nv-T0CuKIRmPWC4GfrA&s=09",
+                  "icon": "bi bi-twitter-x"
+                },
+                {
+                  "platform": "TikTok",
+                  "link": "https://www.tiktok.com/@majikwawatoto?_t=8rf7Likcyoy&_r=1",
+                  "icon": "bi bi-tiktok"
+                }
+              ],
+              "copyright": {
+                "text": "Copyright Maji Kwa Watoto Foundation 2024",
+                "icon": "bi bi-c-circle"
+              }
+            }
+          }
+        }
+      },
+
+
+      "outreach-content": {
+        "header": {
+          "banner": {
+            "image": "photos/thirsty-littleangle-maji-kwa-watoto-foundation.png",
+            "alt": "Watoto Banner"
+          },
+          "back-links": [
+            {
+              "href": "index.html",
+              "text": "Home"
+            },
+            {
+              "text": "Our work"
+            }
+          ]
+        },
+        "team-text": {
+          "content": "At Maji Kwa Watoto (MKW) Foundation, we actively engage with schools, orphanages, and centres across Kenya’s coastal region to provide life-changing access to safe drinking water. Institutions typically apply through an official letter or email, but we also receive referrals from community members who are familiar with MKW's work. Upon receiving an application or referral, MKW performs a needs analysis to assess the number of beneficiaries, the required water volume, and the availability of storage tanks. If a tank is missing, some institutions are unable to receive water, highlighting a significant area of need in our outreach efforts. Through partnerships with Dutch Water Ltd and local government agencies, MKW also provides education on hygiene, environmental care, and children’s rights, helping to build healthier communities. This outreach program is fully funded by our sponsors, Stichting Waterpas Foundation in the Netherlands."
+        },
+        "snapshots": [
+          {
+            "image": "photos/children-all-smiles-maji-kwa-watoto.jpeg",
+            "alt": "Snapshot 1",
+            "overlay": "Joyful children pose with deuces and playful hand signs, beaming at the camera."
+          },
+          {
+            "image": "photos/New-dutch-water's-GM-maji-kwa-watoto.jpg",
+            "alt": "Snapshot 2",
+            "overlay": "School 2"
+          },
+          {
+            "image": "photos/two-visitors-maji-kwa-watoto-foundation (1).jpeg",
+            "alt": "Snapshot 3",
+            "overlay": "Our visitors share smiles and high-fives, spreading love to eager hands."
+          },
+          {
+            "image": "photos/children-at-assembly-maji-kwa-watoto-foundation.jpeg",
+            "alt": "Snapshot 4",
+            "overlay": "School 4"
+          }
+        ],
+        "newsletter-form": {
+          "heading": "We send periodical Newsletters",
+          "email-placeholder": "Enter your email",
+          "button-text": "Subscribe Now"
+        },
+        "donation-section": {
+          "background-image": "photos/donate-maji-kwa-watoto-foundation.jpeg",
+          "heading": "SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN",
+          "buttons": [
+            {
+              "href": "involved.html",
+              "text": "DONATE THROUGH US"
+            },
+            {
+              "text": "DONATE THROUGH OUR PARTNER"
+            }
+          ],
+          "partners": [
+            {
+              "href": "https://www.stichtingwaterpas.nl/",
+              "image": "photos/waterpas-logo-maji-kwa-watoto-foundation.png",
+              "alt": "stichting waterpas",
+              "description": "Donate through our trusted partner"
+            }
+          ]
+        },
+        "back-to-top": {
+          "id": "back-to-top",
+          "aria-label": "Back to Top",
+          "symbol": "↑"
+        },
+        "footer": {
+          "sections": [
+            {
+              "logo": "photos/logo-maji-kwa-watoto.png",
+              "href": "index.html"
+            },
+            {
+              "links": [
+                {
+                  "href": "outreach.html",
+                  "text": "OUTREACH"
+                },
+                {
+                  "href": "impact.html",
+                  "text": "IMPACT"
+                },
+                {
+                  "href": "involved.html",
+                  "text": "GET INVOLVED"
+                }
+              ]
+            },
+            {
+              "open-hours": {
+                "heading": "OPEN HOURS:",
+                "hours": "DAILY 7:00AM- 4:30PM",
+                "location-heading": "LOCATION:",
+                "location": "Unnamed Road, Mtwapa"
+              }
+            },
+            {
+              "contacts": [
+                {
+                  "href": "tel:0721721878",
+                  "icon": "bi bi-telephone-fill",
+                  "text": "+254721721878"
+                },
+                {
+                  "href": "tel:0729465138",
+                  "icon": "bi bi-telephone-fill",
+                  "text": "+254729465138"
+                },
+                {
+                  "href": "mailto:majikwawatotofoundation@gmail.com",
+                  "icon": "fa fa-envelope",
+                  "text": "majikwawatotofoundation@gmail.com"
+                }
+              ]
+            }
+          ],
+          "social-media": [
+            {
+              "href": "https://web.facebook.com/profile.php?id=61568727069373&_rdc=1&_rdr#",
+              "icon": "bi bi-facebook",
+              "text": "Facebook"
+            },
+            {
+              "href": "https://www.instagram.com/majikwawatoto/",
+              "icon": "bi bi-instagram",
+              "text": "Instagram"
+            },
+            {
+              "href": "https://www.linkedin.com/company/105697083/admin/page-posts/published/",
+              "icon": "bi bi-linkedin",
+              "text": "Linkedin"
+            },
+            {
+              "href": "https://x.com/maji_kwa_watoto?t=e75nv-T0CuKIRmPWC4GfrA&s=09",
+              "icon": "bi bi-twitter-x",
+              "text": "Twitter"
+            },
+            {
+              "href": "https://www.tiktok.com/@majikwawatoto?_t=8rf7Likcyoy&_r=1",
+              "icon": "bi bi-tiktok",
+              "text": "Tiktok"
+            }
+          ],
+          "copyright": {
+            "icon": "bi bi-c-circle",
+            "text": "Copyright Maji Kwa Watoto Foundation 2024"
+          }
+        }
+      }
+
+
+      
+    
+  }
+  
