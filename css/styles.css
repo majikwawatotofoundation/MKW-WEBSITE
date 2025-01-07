@@ -75,15 +75,9 @@ margin-bottom:3px;
   opacity:1;
 
 }
-/* .video-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-} */
 
 
-.watoto-video,.video-fallback{
+.watoto-video,.lazy-image{
   width:100%;
   height:100%;
   object-fit:cover;
@@ -91,40 +85,24 @@ margin-bottom:3px;
   top:0;
   left:0;
   object-fit: cover;
-
-  transition: opacity 1s ease; /* Smooth fade-in for video */ 
+  transition: opacity 1s ease-in-out; 
 }
-.video-fallback {
+.lazy-image {
   z-index: 1; /* Place behind the video */
-  opacity: 1;
-}
-.watoto-video {
-  z-index: 3; /* Video over fallback */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 1s ease; /* Smooth fade-in for video */
+
 }
 
-
-/* .video-container{
-   position: relative;
- 
-} */
-
- 
-.video-placeholder {
+.watoto-video{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
-  opacity: 1;
-   /* Start as hidden for a smooth transition */
-  transition: opacity 1s ease; 
-  /* Smooth fade-out transition */
-  z-index:2;
+  object-fit: cover;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
-
 
 .video-text{
     position:absolute;
@@ -139,16 +117,7 @@ margin-bottom:3px;
 }
 
 
-/* .video-text{
-    position:absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color:white;
-    z-index: 2;
-    width:80%;
-} */
+
 .watoto-banner img{
   width:100%;
   height:70vh;
@@ -1025,6 +994,7 @@ margin-bottom:3px;
   opacity: 1;
   transition: opacity 0.5s ease-in;
   z-index: 1; /* Ensure image appears above the shimmer once loaded */
+  animation: none; /* Stop shimmer animation immediately */
 }
 
 /* .finished-loading img, h2, a{
