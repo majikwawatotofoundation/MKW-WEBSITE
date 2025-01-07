@@ -2,8 +2,9 @@ body{
     background:rgb(247, 238, 238);
     font-size: 18px;
     line-height: 1.8;
-    
+    background-image: url('/water-maji-kwa-watoto-foundation.jpg');
 }
+
 
 .video-background{
     position:relative;
@@ -31,31 +32,72 @@ body{
     position:absolute;
     top: 15px;
     left:15px;
-    z-index:2;
+    z-index:1000;
+    opacity:1;
     
 }
-.watoto-video{
-    width:100%;
-    height:auto;
-    object-fit:cover;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:1; 
-    object-fit: cover;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 1s ease; /* Smooth fade-in for video */ 
+body{
+  background:rgb(247, 238, 238);
+  font-size: 18px;
+  line-height: 1.8;
+  
 }
-.video-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  transition: opacity 1s ease; /* Smooth fade-out transition */
-  z-index: 1; /* Make sure it sits above the video initially */
+ .container-fluid {
+  margin: 0;
+  padding: 0;
 }
+
+   .video-background{
+  position:relative;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  z-index:0;
+}
+
+.header-background{
+position:relative;
+z-index:1;
+width:100%;
+height:70vh;
+overflow:hidden;
+margin-bottom:3px;
+}
+
+/* Video or image background at the start of all webpage html*/
+.watoto-logo img {
+  max-width:200px;
+  height:auto;
+  position:absolute;
+  top: 15px;
+  left:15px;
+  z-index:10;
+  opacity:1;
+
+}
+
+
+.watoto-video,.lazy-observe{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  top:0;
+  left:0;
+  object-fit: cover;
+
+  transition: opacity 1s ease; /* Smooth fade-in for video */ 
+}
+.video-fallback {
+  z-index: 1; /* Place behind the video */
+}
+.watoto-video {
+  z-index: 1; /* Video over fallback */
+  transition: opacity 1s ease; /* Smooth fade-in for video */
+}
+
+
+
 
 .video-text{
     position:absolute;
@@ -64,11 +106,14 @@ body{
     transform: translate(-50%,-50%);
     text-align: center;
     color:white;
-    z-index: 2;
+    z-index: 1;
     width:80%;
+    opacity:1;
 }
 
-.image-background{
+
+
+.watoto-banner img{
   width:100%;
   height:70vh;
   object-fit: cover;
@@ -77,6 +122,23 @@ body{
   position:absolute;
   display:flex;
 }
+.banner-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+   /* Start as hidden for a smooth transition */
+  transition: opacity 1s ease; 
+  /* Smooth fade-out transition */
+  z-index:2;
+}
+
+/* .image-background{
+ 
+} */
 .back-links{
   position:absolute;
   z-index:2;
@@ -124,14 +186,14 @@ body{
   right:15px;
   padding:10px;
   position:absolute;
-  z-index:3;
+  z-index:5;
 }
 .navbar-collapse{
   top:80px;
   right:70px;
   padding:10px;
   position: absolute;
-  z-index:4;
+  z-index:5;
   background-color: #0078C8;
   width:300px;
   height:auto;
@@ -245,19 +307,19 @@ body{
   position: absolute;
   right: 30px;/* adjust as needed*/
   top: 100%;
-  z-index:2;
+  z-index:5;
   transform: translateY(-0%);
 }
-.search-btn{
+#search-btn{
   background:none;
   border: none;
   cursor: pointer;
   font-size: 2rem;
   position:absolute;
-  z-index:3;
+  z-index:5;
 }
 
-.search-btn i{
+#search-btn i{
   color:white;
 }
 .close-btn{
@@ -277,6 +339,13 @@ body{
 }
 .search-container.active  .close-btn.show{
   display:block;
+}
+.seach-results{
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* end of search button functionality*/
 
@@ -369,12 +438,6 @@ body{
 .involved-tile a p{
     margin: 0;
 }
-.happening-next{
-    position:relative;
-}
-/* .happening-next-wrp{
-    
-} */
 .heading-next{
     width:700px;
     height:100px;
@@ -412,12 +475,51 @@ body{
     /* align-items:flex-start;
     justify-content:flex-start; */
   }
+
   .t-next-1 img{
     width:100%;
     height:600px;
     object-fit:cover;
   }
-  .t-next-1 h4{
+  .t-next{
+    padding:0;
+  }
+  .t-next-1 .happenings-txt{
+    position:absolute;
+    bottom:60px; /* Position text 30px from the bottom */
+    left: 30px; /* Position text 30px from the left */
+    padding:0;
+    display:flex;
+    color:white;
+    z-index:2;
+    margin:0;
+  }
+  .t-next-1 .happenings-txt span{
+    position:absolute;
+    bottom:-50px; 
+    left:0; 
+    padding:0;
+    z-index:2;
+    display:block;
+    color:white;
+  }
+  
+  .t-next-2  {
+    flex: 0 0 30%; /* Takes 100% of the available width */
+    flex-direction: column; /* Stacks the two images vertically */
+    gap: 10px; /* Adds space between the two images */
+   
+  }
+  .hextra {
+    position:relative;
+  }
+  
+  .t-next-2 img {
+    width: 100%;
+    height:295px; /* Ensures that the images take up the full width of the container */
+    object-fit:cover;
+  }
+  .t-next-2 .happenings-txt{
     position:absolute;
     bottom:30px; /* Position text 30px from the bottom */
     left: 30px; /* Position text 30px from the left */
@@ -427,7 +529,7 @@ body{
     z-index:2;
     margin:0;
   }
-  .t-next-1 h4 span{
+  .t-next-2 .happenings-txt span{
     position:absolute;
     bottom:-30px; 
     left:0; 
@@ -435,18 +537,7 @@ body{
     z-index:2;
     display:block;
   }
-  
-  .t-next-2 {
-    flex: 0 0 30%; /* Takes 100% of the available width */
-    flex-direction: column; /* Stacks the two images vertically */
-    gap: 10px; /* Adds space between the two images */
-  }
-  
-  .t-next-2 img {
-    width: 100%;
-    height:295px; /* Ensures that the images take up the full width of the container */
-    object-fit:cover;
-  }
+
   /* .txt-next-1 {
     flex:0 0 100%;
     display:flex;
@@ -506,6 +597,16 @@ body{
     margin-bottom:5px;
     padding-right:1px;
 
+  }
+ 
+  .snapshot .shimmer {
+    display: flex;
+    /* Ensure the shimmer covers the whole space of snapshot */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional shimmer background */
   }
   
   .snapshot img {
@@ -617,7 +718,7 @@ body{
     width:100%;
     height:auto;
     padding: 5px;
-    background-color:rgb(35, 161, 192);
+    background-color:#0078C8;
     text-align: center;
     /* border: 2px solid white; */
     color:white;
@@ -844,6 +945,7 @@ body{
     display:flex;
     flex-direction:column;
     line-height:1.5;
+    padding:20px;
     /* font-size:14px; */
     
     
@@ -857,7 +959,57 @@ body{
     align-self:start;
     /* line-height:0.2; */
   }
+  /* Shimmer effect styles */
+  .shimmer::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  opacity: 1; /* Show shimmer initially */
+  z-index: 2; /* Ensure shimmer is on top of the image *
+  transition: opacity 0.5s ease-in; /* Smooth fade-in */
+}
+/* Fade-out effect on load */
+.slow-load img.finished-loading + .shimmer::before {
+  opacity: 0; /* Hide shimmer after the image loads */
+}
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+ /* .slow-load img, h2, a{
+  display:none;
+ } */
+
+ .finished-loading {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  z-index: 1; /* Ensure image appears above the shimmer once loaded */
+}
+
+/* .finished-loading img, h2, a{
+  display:block;
+ } */
+
+
+
+
+ 
 
   
 
@@ -870,6 +1022,14 @@ body{
 
 
 /* MEDIA QUERIES*/
+@media(max-width:1200px){
+
+
+ .info .email-hide {
+    font-size: 0.6rem; /* Slightly reduce font size for the email */
+  }
+}
+
     @media(max-width:992px){
         .foundation-face-tiles{
             flex-direction:column;
@@ -892,6 +1052,9 @@ body{
             flex: 0 0 100%;
             height:80vh;
         }
+        .updates img{
+          height:60vh;
+        }
        
         .t-next-2{
             flex: 0 0 100%;
@@ -904,6 +1067,7 @@ body{
         .video-background{
           height:100vh;
           object-fit:cover;
+        
         }
         .watoto-video{
           height:100vh;
@@ -980,6 +1144,16 @@ body{
   body {
     font-size: 16px; /* Slightly smaller for tablets */
  }
+ .f-contents .row{
+  align-items:center;
+  
+ }
+ .info .email-hide {
+  font-size: 0.9rem; /* Slightly reduce font size for the email */
+}
+
+ 
+   
       
 
       
@@ -1011,15 +1185,27 @@ body{
       .pal-donate a h4{
        font-size:1em;
        }
-       /* Smaller padding for compact view */
-    /* .navbar-collapse {
-      padding: 15px;
-      width: 200px;
+       .socials {
+       font-size: 0.8em;
+       gap:5px;
+        }
+        .socials i{
+          font-size: 1em;;
+        }
+        .socials p{
+          font-size: 0.9em;
+        }
+        .the-end{
+     
+         font-size: 0.9em;
+        }
+    
+    .mkw-logo img{
+      max-width: 150px;
+      height:auto;
+      padding-top:20px;
     }
-
-    .navbar-collapse ul li a {
-      font-size: 0.9rem;
-    } */
+    
 
     }
   
@@ -1050,7 +1236,236 @@ body{
     body {
       font-size: 14px; /* Optimal for smaller screens */
    }
+   .socials {
+    font-size: 0.5em;
+     
+     }
+     .socials p{
+       font-size:0.5rem; 
+     }
+     .the-end{
+      font-size: 0.9em;
+     }
+     .mkw-logo img{
+      max-width: 100px;
+      height:auto;
+      padding-top:20px;
+    }
+    .footer{
+      font-size:14px;
+    }
+  
+   
     
     
     }
+    @media(max-width:360px){
+      .socials {
+        font-size: 0.4em;
+        gap:2px;
+         }
+        .socials i {
+          font-size: 0.4rem;
+           }
+           .socials p {
+           display:none;
+             }
+    }
+    .wait-donation{
+      position:relative
+    }
+    /* Style for the Back to Top button */
+#back-to-top {
+  position: absolute;
+  bottom: 50%;
+  right: 20px;
+  background-color: #007bff; /* Adjust the color as needed */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+  opacity: 1; /* Hidden by default */
+  z-index:1001;
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  background-color:#0078C8;
+  color: white;
+  padding: 60px 0;
+  font-size: 18px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.footer a {
+  color: var(--default-color) !important;
+}
+
+.footer a:hover {
+  color: var(--accent-color);
+}
+
+.footer .copyright {
+  margin-top: 50px;
+  position: relative;
+  padding-top: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.footer .copyright p,
+.footer .copyright .credits {
+  margin: 2px 0;
+}
+
+.footer .btn-learn-more {
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  padding: 8px 30px;
+  border: 2px solid transparent;
+  transition: 0.3s all ease-in-out;
+  font-size: 18px;
   
+}
+
+.footer .btn-learn-more:hover {
+  border-color: #2fe3e4;
+  background-color: transparent;
+ 
+}
+
+.footer .widget .widget-heading {
+  font-size: 18px;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+}
+
+.footer .widget ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.footer .widget ul li a {
+  color: color-mix(in srgb, var(--heading-color), transparent 50%);
+}
+
+.footer .widget ul li a:hover {
+  text-decoration: none;
+  color: var(--heading-color);
+}
+
+.footer .widget .footer-blog-entry .date {
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 18px;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+}
+
+.footer .social-icons li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .social-icons li a span {
+  color: color-mix(in srgb, var(--heading-color), transparent 0%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s all ease-in-out;
+}
+
+.footer .social-icons li a:hover {
+  background: var(--accent-color);
+}
+
+.footer .social-icons li a:hover span {
+  color: var(--contrast-color);
+}
+
+.footer .social-icons li:first-child a {
+  padding-left: 0;
+}
+
+.footer .footer-subscribe form {
+  position: relative;
+}
+
+.footer .footer-subscribe .form-control {
+  font-size: 18px;
+  height: 42px;
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 40%);
+  background: none;
+  color: var(--heading-color);
+  padding-right: 40px;
+}
+
+.footer .footer-subscribe .form-control:focus {
+  border-color: color-mix(in srgb, var(--default-color), transparent 10%);
+  box-shadow: none;
+}
+
+
+/*--------------------------------------------------------------
+# construction
+--------------------------------------------------------------*/
+
+.construction{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0078C8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.construction-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.construction-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.construction-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #0078C8;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #005fa1;
+  color: white;
+}
+

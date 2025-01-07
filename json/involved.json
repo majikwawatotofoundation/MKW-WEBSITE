@@ -1,0 +1,223 @@
+{
+    
+    "involved-content": {
+        "watoto-banner": {
+          "slow-load": true,
+          "banner-placeholder": {
+            "image-background": {
+              "data-src": "photos/thirsty-littleangle-maji-kwa-watoto-foundation.png"
+            }
+          }
+        },
+        "back-links": {
+          "links": [
+            {
+              "href": "index.html",
+              "text": "Home"
+            },
+            {
+              "text": "Welcome aboard!"
+            }
+          ]
+        },
+        "main-container": {
+          "donate-here-container": {
+            "form": {
+              "title": "Your Message and Donation",
+              "description": "We invite you to share a personal message or comment along with your donation. Your support means a lot to us, and your words inspire our mission. Rest assured, your personal details will be stored securely and never shared without your permission.",
+              "inputs": [
+                {
+                  "type": "text",
+                  "class": "name-input1",
+                  "placeholder": "First Name*"
+                },
+                {
+                  "type": "text",
+                  "class": "name-input2",
+                  "placeholder": "Last Name*"
+                },
+                {
+                  "type": "text",
+                  "class": "email-input",
+                  "placeholder": "Enter your Email adress*"
+                },
+                {
+                  "type": "text",
+                  "class": "comment-input",
+                  "placeholder": "Leave a comment"
+                }
+              ],
+              "submit-button": {
+                "class": "send",
+                "text": "SEND"
+              },
+              "donation-options": {
+                "mpesa": {
+                  "title": "Donate via Mpesa",
+                  "mpesa-details": {
+                    "paybill": "552800",
+                    "account-number": "300440",
+                    "image": "photos/mpesa-logo-maji-kwa-watoto-foundation.png"
+                  }
+                },
+                "paypal": {
+                  "title": "Donate via Paypal",
+                  "link": "https://www.paypal.com/donate/?hosted_button_id=BUQCKW4QZLQSE",
+                  "image": "photos/paypal-logo-maji-kwa-watoto.png",
+                  "button-text": "Donate Now"
+                }
+              }
+            }
+          },
+          "team-text": {
+            "description": "Join us in making a difference! Whether through donations, volunteering, or spreading awareness, your support brings safe drinking water to more children.",
+            "ways-to-contribute": [
+              {
+                "title": "Sponsor a Water Tank",
+                "description": "With a one-time donation, help provide essential water storage for schools that currently lack infrastructure."
+              },
+              {
+                "title": "Monthly Water Supplies",
+                "description": "Fund a portion of the Ksh 4-per-liter cost to ensure uninterrupted water access for schools and centres."
+              },
+              {
+                "title": "General Contributions",
+                "description": "Donate through Stichting Waterpas Foundation or directly to MKW to support our ongoing efforts."
+              }
+            ],
+            "volunteer-opportunity": "You can also volunteer to help with community initiatives or environmental programs."
+          }
+        },
+        "subscribe-container": {
+          "title": "We send periodical Newsletters",
+          "inputs": [
+            {
+              "type": "email",
+              "name": "email",
+              "placeholder": "Enter your email",
+              "required": true
+            }
+          ],
+          "submit-button": {
+            "text": "Subscribe Now"
+          }
+        },
+        "donate": {
+          "image": "photos/donate-maji-kwa-watoto-foundation.jpeg",
+          "background-class": "donate-background",
+          "title": "SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN",
+          "button": {
+            "href": "involved.html",
+            "text": "DONATE THROUGH US"
+          },
+          "partner-info": {
+            "title": "DONATE THROUGH OUR PARTNER",
+            "partners": [
+              {
+                "link": "https://www.stichtingwaterpas.nl/",
+                "image": "photos/waterpas-logo-maji-kwa-watoto-foundation.png",
+                "description": "Donate through our trusted partner"
+              }
+            ]
+          }
+        },
+        "wait-donation": {
+          "button": {
+            "id": "back-to-top",
+            "aria-label": "Back to Top",
+            "symbol": "&#8679;"
+          }
+        },
+        "footer": {
+          "fdesign": {
+            "f-contents": {
+              "sections": [
+                {
+                  "class": "col-sm-12 col-md-3",
+                  "logo": {
+                    "href": "index.html",
+                    "image": "photos/logo-maji-kwa-watoto.png"
+                  }
+                },
+                {
+                  "class": "col-sm-12 col-md-3 links",
+                  "links": [
+                    {
+                      "href": "outreach.html",
+                      "text": "OUTREACH"
+                    },
+                    {
+                      "href": "impact.html",
+                      "text": "IMPACT"
+                    },
+                    {
+                      "href": "involved.html",
+                      "text": "GET INVOLVED"
+                    }
+                  ]
+                },
+                {
+                  "class": "col-sm-12 col-md-3 time-location",
+                  "open-hours": "DAILY 7:00AM-4:30PM",
+                  "location": "Unnamed Road, Mtwapa"
+                },
+                {
+                  "class": "col-sm-12 col-md-3 contacts",
+                  "contacts": [
+                    {
+                      "href": "tel:0721721878",
+                      "icon": "bi bi-telephone-fill",
+                      "number": "+254721721878"
+                    },
+                    {
+                      "href": "tel:0729465138",
+                      "icon": "bi bi-telephone-fill",
+                      "number": "+254729465138"
+                    },
+                    {
+                      "href": "mailto:majikwawatotofoundation@gmail.com",
+                      "icon": "fa fa-envelope",
+                      "email": "majikwawatotofoundation@gmail.com"
+                    }
+                  ]
+                }
+              ]
+            },
+            "last-row": {
+              "follow-us-title": "FOLLOW US",
+              "socials": [
+                {
+                  "platform": "Facebook",
+                  "link": "https://web.facebook.com/profile.php?id=61568727069373&_rdc=1&_rdr#",
+                  "icon": "bi bi-facebook"
+                },
+                {
+                  "platform": "Instagram",
+                  "link": "https://www.instagram.com/majikwawatoto/",
+                  "icon": "bi bi-instagram"
+                },
+                {
+                  "platform": "LinkedIn",
+                  "link": "https://www.linkedin.com/company/105697083/admin/page-posts/published/",
+                  "icon": "bi bi-linkedin"
+                },
+                {
+                  "platform": "Twitter",
+                  "link": "https://x.com/maji_kwa_watoto?t=e75nv-T0CuKIRmPWC4GfrA&s=09",
+                  "icon": "bi bi-twitter-x"
+                },
+                {
+                  "platform": "TikTok",
+                  "link": "https://www.tiktok.com/@majikwawatoto?_t=8rf7Likcyoy&_r=1",
+                  "icon": "bi bi-tiktok"
+                }
+              ],
+              "copyright": {
+                "text": "Copyright Maji Kwa Watoto Foundation 2024",
+                "icon": "bi bi-c-circle"
+              }
+            }
+          }
+        }
+      }
+}

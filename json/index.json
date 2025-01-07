@@ -1,0 +1,200 @@
+{
+    "index-content": {
+      "video-text": {
+        "h1": "Bringing Life and Hope to Our Children",
+        "p": "Delivering healthy drinking water to brighten children's smiles and secure their future"
+      },
+      "foundation-face-tiles": [
+        {
+          "title": "OUTREACH",
+          "img-src": "photos/outreach-to-schools-maji-kwa-watoto-foundation.jpeg",
+          "link": "outreach.html",
+          "description": "Discover Our Work"
+        },
+        {
+          "title": "OUR IMPACT",
+          "img-src": "photos/impact3-maji-watoto-foundation.jpeg",
+          "link": "impact.html",
+          "description": "See the Difference"
+        },
+        {
+          "title": "GET INVOLVED",
+          "img-src": "photos/nlvisitor-with-children-maji-kwa-watoto-foundation.jpeg",
+          "link": "involved.html",
+          "description": "Join Us Today"
+        }
+      ],
+      "happening-next": {
+        "heading": "WHAT'S HAPPENING NEXT",
+        "events": [
+          {
+            "img-src": "photos/candidates-maji-kwa-watoto-foundation.jpeg",
+            "title": "Fresh water for all candidates!",
+            "subtitle": "Exams ongoing"
+          },
+          {
+            "img-src": "photos/christmas-maji-kwa-watoto-foundation.jpg",
+            "title": "Water for all at Our annual Christmas party!",
+            "subtitle": "December 1"
+          },
+          {
+            "img-src": "photos/clocks-clock-maji-kwa-watotot-foundation.jpg (1).jpg",
+            "title": "Looking back...!",
+            "subtitle": "👀"
+          }
+        ]
+      },
+      "latest-updates": {
+        "heading": "LATEST UPDATES",
+        "news": [
+          {
+            "img-src": "photos/light-grey-maji-kwa-watoto-foundation1.png",
+            "title": "Clean Water Boosts School Success: Better Health, Better Results",
+            "description": "Our water foundation has helped 10 schools improve mid-term exam results by ensuring students have access to clean water. In the past, many children missed lessons due to stomach issues from unsafe water or leaving school at lunchtime to get water from home. Now, with a lunch program and clean water, students stay refreshed, healthy, and focused on their studies. Join us on December 1st at Amkeni Primary School for a special prize giving day to celebrate this success"
+          }
+        ]
+      },
+      "highlight": {
+        "heading": "HIGHLIGHTS FROM OUR SCHOOLS",
+        "images": [
+          {
+            "img-src": "photos/children-all-smiles-maji-kwa-watoto.jpeg",
+            "alt-text": "Snapshot 1",
+            "overlay": "Joyful children pose with deuces and playful hand signs, beaming at the camera."
+          },
+          {
+            "img-src": "photos/New-dutch-water's-GM-maji-kwa-watoto.jpg",
+            "alt-text": "Snapshot 2",
+            "overlay": "School 2"
+          },
+          {
+            "img-src": "photos/two-visitors-maji-kwa-watoto-foundation (1).jpeg",
+            "alt-text": "Snapshot 3",
+            "overlay": "Our visitors share smiles and high-fives, spreading love to eager hands."
+          },
+          {
+            "img-src": "photos/children-at-assembly-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 4",
+            "overlay": "School 4"
+          },
+          {
+            "img-src": "photos/children-enjoying-healthy-clean-drinking-water.jpg",
+            "alt-text": "Snapshot 5",
+            "overlay": "Little girls sip water by the tank, shy smiles lighting up their faces."
+          },
+          {
+            "img-src": "photos/children-drinking-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 6",
+            "overlay": "School 6"
+          },
+          {
+            "img-src": "photos/children-mkw.jpeg",
+            "alt-text": "Snapshot 7",
+            "overlay": "School 7"
+          },
+          {
+            "img-src": "photos/children-fetching-WATER-maji-kwa-watoto-foundation.jpg",
+            "alt-text": "Snapshot 8",
+            "overlay": "School 8"
+          },
+          {
+            "img-src": "photos/boys-enjoying-healthy-clean-water-maji kwa watoto (2).jpeg",
+            "alt-text": "Snapshot 9",
+            "overlay": "School 9"
+          },
+          {
+            "img-src": "photos/children-lining-up-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 10",
+            "overlay": "School 10"
+          },
+          {
+            "img-src": "photos/shareholders-children-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 11",
+            "overlay": "School 11"
+          },
+          {
+            "img-src": "photos/children-with-dutch-water-staff.jpg",
+            "alt-text": "Snapshot 12",
+            "overlay": "School 12"
+          },
+          {
+            "img-src": "photos/children-mkw.jpeg",
+            "alt-text": "Snapshot 13",
+            "overlay": "School 13"
+          },
+          {
+            "img-src": "photos/children-skipping-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 14",
+            "overlay": "School 14"
+          },
+          {
+            "img-src": "photos/children-with-visitors-maji-kwa-watoto.jpeg",
+            "alt-text": "Snapshot 15",
+            "overlay": "School 15"
+          },
+          {
+            "img-src": "photos/children-games-maji-kwa-watoto-foundation.jpeg",
+            "alt-text": "Snapshot 16",
+            "overlay": "School 16"
+          }
+        ]
+      },
+      "subscribe-form": {
+        "heading": "We send periodical Newsletters",
+        "email-placeholder": "Enter your email",
+        "submit-text": "Subscribe Now"
+      },
+      "donate": {
+        "heading": "SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN",
+        "button-link": "involved.html",
+        "button-text": "DONATE THROUGH US",
+        "partner-heading": "DONATE THROUGH OUR PARTNER",
+        "partners": [
+          {
+            "img-src": "photos/waterpas-logo-maji-kwa-watoto-foundation.png",
+            "alt-text": "Stichting Waterpas",
+            "link": "https://www.stichtingwaterpas.nl/"
+          }
+        ]
+      },
+      "footer": {
+        "socials": [
+          {
+            "platform": "Facebook",
+            "link": "https://web.facebook.com/profile.php?id=61568727069373&_rdc=1&_rdr#",
+            "icon": "bi-facebook"
+          },
+          {
+            "platform": "Instagram",
+            "link": "https://www.instagram.com/majikwawatoto/",
+            "icon": "bi-instagram"
+          },
+          {
+            "platform": "Linkedin",
+            "link": "https://www.linkedin.com/company/105697083/admin/page-posts/published/",
+            "icon": "bi-linkedin"
+          },
+          {
+            "platform": "Twitter",
+            "link": "https://x.com/maji_kwa_watoto?t=e75nv-T0CuKIRmPWC4GfrA&s=09",
+            "icon": "bi-twitter-x"
+          },
+          {
+            "platform": "TikTok",
+            "link": "https://www.tiktok.com/@majikwawatoto?_t=8rf7Likcyoy&_r=1",
+            "icon": "bi-tiktok"
+          }
+        ],
+        "contact": {
+          "phone1": "+254721721878",
+          "phone2": "+254729465138",
+          "email": "majikwawatotofoundation@gmail.com",
+          "location": "Unnamed Road, Mtwapa",
+          "open-hours": "DAILY 7:00AM- 4:30PM"
+        },
+        "copyright": "Copyright Maji Kwa Watoto Foundation 2024"
+      }
+    } 
+    
+  }
+  

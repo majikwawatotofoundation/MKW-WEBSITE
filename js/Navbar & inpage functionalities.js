@@ -54,6 +54,16 @@ closeButton.addEventListener('click', function () {
   closeButton.classList.remove('show');
 
 });
+//BACK TO TOP BUTTON
+ // Add this to your JavaScript file or inside a <script> tag
+ const backToTopButton = document.getElementById('back-to-top');
+ 
+
+ 
+ // Scroll to the top when the button is clicked
+ backToTopButton.addEventListener('click', function() {
+   window.scrollTo({ top: 0, behavior: 'smooth' });
+ });
 
 };
 
