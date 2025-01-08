@@ -44,9 +44,40 @@ const slowLoadImages = () => {
 };
 
 
+// // Function to lazy-load videos
+// const slowLoadVideo = () => {
+//   const videoElements = document.querySelectorAll('.watoto-video');
+  
+//   // const videoText = document.querySelector('.video-text');
 
+//   for (let i = 0; i < videoElements.length; i++) {
+//     const media = videoElements[i];
+//     const src = media.getAttribute('data-src');
+//     const placeholder = document.querySelector('.video-placeholder');
+//     const fallbackImage = document.querySelector('.video-fallback');
+   
+//     if (src && isElementInViewport(media)) {
+//       media.src = src; 
+//       media.load(); // Start loading the video
+//    // Placeholder fades out after 2 seconds and lowers z-index
+//     setTimeout(() => {
+//       placeholder.style.zIndex = '0';
+//     }, 2000);
 
-
+//       media.addEventListener('canplaythrough', () =>  {
+//         media.classList.add('finished-loading'); // Add fade-in transition
+//         media.style.opacity = '1'; // Ensure video is visible
+//         fallbackImage.style.opacity ='0';
+//          console.log(`Video loaded successfully: ${src}`);
+//       }); 
+      
+//     }else {
+//      // Show fallback image and keep placeholder visible if video is not ready
+//      fallbackImage.style.opacity = '1';
+//      console.log('Video not in viewport or missing src, showing fallback.');
+//     }
+//   };
+// };
 
 
 
@@ -56,8 +87,8 @@ window.addEventListener('resize', slowLoadImages);
 window.addEventListener('load', slowLoadImages);
 
 // window.addEventListener('scroll', slowLoadVideo);
-window.addEventListener('resize', slowLoadVideo);
-window.addEventListener('load', slowLoadVideo);
+// window.addEventListener('resize', slowLoadVideo);
+// window.addEventListener('load', slowLoadVideo);
 
 
 
