@@ -1,60 +1,4 @@
-body{
-    background:rgb(247, 238, 238);
-    font-size: 18px;
-    line-height: 1.8;
-    background-image: url('/water-maji-kwa-watoto-foundation.jpg');
-    font-size: 18px;
-    line-height: 1.8;
-    background-image: url('/water-maji-kwa-watoto-foundation.jpg');
-}
 
-
-
-.video-background{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-    z-index:0;
-    
-    z-index:0;
-    
-}
-
-.header-background{
-  position:relative;
-  z-index:1;
-  width:100%;
-  height:70vh;
-  overflow:hidden;
-  margin-bottom:3px;
- 
-}
-
-/* Video or image background at the start of all webpage html*/
-.header-background{
-  position:relative;
-  z-index:1;
-  width:100%;
-  height:70vh;
-  overflow:hidden;
-  margin-bottom:3px;
- 
-}
-
-/* Video or image background at the start of all webpage html*/
-.watoto-logo img{
-    max-width:200px;
-    height:auto;
-    position:absolute;
-    top: 15px;
-    left:15px;
-    z-index:1000;
-    opacity:1;
-    z-index:1000;
-    opacity:1;
-    
-}
 body{
   background:rgb(247, 238, 238);
   font-size: 18px;
@@ -96,7 +40,7 @@ margin-bottom:3px;
 }
 
 
-.watoto-video,.lazy-observe{
+.watoto-video,.lazy-image{
   width:100%;
   height:100%;
   object-fit:cover;
@@ -107,8 +51,9 @@ margin-bottom:3px;
 
   transition: opacity 1s ease; /* Smooth fade-in for video */ 
 }
-.video-fallback {
+.lazy-image {
   z-index: 1; /* Place behind the video */
+ 
 }
 .watoto-video {
   z-index: 1; /* Video over fallback */
@@ -393,6 +338,15 @@ margin-bottom:3px;
  z-index: 2;
  color: white;
 }
+.outreach-tile h2,
+.outreach-tile a p,
+.impact-tile h2,
+.impact-tile a p,  
+.involved-tile h2,
+.involved-tile a p{
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Black shadow */
+}
 .outreach-tile a{
   position: relative;
   padding: 10px 20px;
@@ -496,13 +450,14 @@ margin-bottom:3px;
   }
   .t-next-1 .happenings-txt{
     position:absolute;
-    bottom:30px; /* Position text 30px from the bottom */
+    bottom:10%; /* Position text 30px from the bottom */
     left: 30px; /* Position text 30px from the left */
     padding:0;
     display:flex;
     color:white;
     z-index:2;
     margin:0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Black shadow */
   }
   .t-next-1 .happenings-txt span{
     position:absolute;
@@ -511,6 +466,10 @@ margin-bottom:3px;
     padding:0;
     z-index:2;
     display:block;
+  }
+  .happenings-txt a{
+   text-decoration: none;
+   color:white;
   }
   
   .t-next-2  {
@@ -530,13 +489,14 @@ margin-bottom:3px;
   }
   .t-next-2 .happenings-txt{
     position:absolute;
-    bottom:30px; /* Position text 30px from the bottom */
+    bottom:15%; /* Position text 30px from the bottom */
     left: 30px; /* Position text 30px from the left */
     padding:0;
     display:flex;
     color:white;
     z-index:2;
     margin:0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Black shadow */
   }
   .t-next-2 .happenings-txt span{
     position:absolute;
@@ -567,14 +527,19 @@ margin-bottom:3px;
   }
 
   .updates img{
-    width:100%;
-    height:auto;
+    width:100vw;
+    height:100vh;
   }
   .updates .updates-txt{
    position:absolute;
    bottom:20px;
    left:20px;
    color:white;
+  }
+  .updates-txt a{
+    text-decoration: none;
+    color:white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Black shadow */
   }
   .short-update{
     width:100%;
@@ -585,9 +550,29 @@ margin-bottom:3px;
     display:block;
     justify-content: center;
     align-items: center;
-    padding:5px;
-    
+   margin-right:0;
+   padding:5px;
   }
+  .short-update p{
+    padding:15px;
+  }
+  .short-update .read-more a {
+    display: inline-block; /* Ensures proper padding and spacing */
+    color: #fff; /* White text for visibility */
+    background-color: #ff4500; /* Bright orange for contrast */
+    font-size: 0.9rem; /* Slightly smaller than the paragraph text */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes it stand out */
+    padding: 5px 10px; /* Adds clickable space */
+    border-radius: 4px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .short-update .read-more a:hover {
+    background-color: #ff6347; /* Lighter orange on hover */
+    color: #000; /* Black text on hover for contrast */
+  }
+  
   .short-updates p{
     text-align: right;
  
@@ -1046,12 +1031,16 @@ margin-bottom:3px;
         }
         .outreach-tile, .impact-tile, .involved-tile{
             width:100%;
-            height:60vh;  
-            margin-top:1px;
-            margin-bottom:1px;
+            height:50vh;  
+            margin: 2px;
              padding:0;
             /* object-fit:cover;  */
         }
+        .tile-image {
+          width: 100%;
+          height: 50vh;
+        }
+       
         .heading-next{
             width:100%;
         }
