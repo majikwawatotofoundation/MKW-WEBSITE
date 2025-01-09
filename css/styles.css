@@ -1299,8 +1299,8 @@ margin-bottom:3px;
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  background-color:#0078C8;
-  color: white;
+  /* background-color:;
+  color:  */
   padding: 60px 0;
   font-size: 18px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
