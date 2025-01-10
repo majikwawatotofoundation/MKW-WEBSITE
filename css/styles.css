@@ -91,6 +91,11 @@ margin-bottom:3px;
   position:absolute;
   display:flex;
 }
+.navbar-collapse {
+  position: relative;
+  z-index: 15; /* Ensure it's above other elements */
+}
+
 .banner-placeholder {
   position: absolute;
   top: 0;
@@ -102,7 +107,21 @@ margin-bottom:3px;
    /* Start as hidden for a smooth transition */
   transition: opacity 1s ease; 
   /* Smooth fade-out transition */
-  z-index:2;
+  z-index:1;
+}
+@media (max-width: 768px) {
+  .header-background{
+    width:100%;
+    height:50vh;
+  }
+  .watoto-banner img{
+    width:100%;
+    height:50vh;
+  }
+  .banner-placeholder {
+    width: 100%;
+    height: 50vh;
+  }
 }
 
 /* .image-background{
@@ -2099,5 +2118,7 @@ font-size: 14px;
 .tags-widget ul a {
   font-size: 10px; /* Smaller font for tags */
 }
+
+/* Debugging navbar collPSE*
 
 
