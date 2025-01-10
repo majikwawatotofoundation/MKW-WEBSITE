@@ -1,4 +1,8 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background:rgb(247, 238, 238);
   font-size: 18px;
@@ -121,17 +125,41 @@ margin-bottom:3px;
   color:white;
   padding:20px;
   text-decoration:none;
-  background-color: #2975c7;
+  background-color: rgba(41, 117, 199, 0.6);
 }
 .back-links a h4{
-  background-color: #007BFF;
+  background-color: rgba(0, 123, 255, 0.6);
   color:white;
 }
 
 .back-links h4:hover{
   text-decoration: solid;
- 
 }
+.banner-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Ensure the text appears above the image */
+}
+.banner-heading a{
+  text-decoration: none;
+}
+
+.banner-heading a h1 {
+  color: white; /* Text color */
+  background-color: rgba(41, 117, 199, 0.6);
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem; /* Adjust font size as needed */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+
 
 
 
@@ -2023,5 +2051,48 @@ padding-left: 5px;
 color: color-mix(in srgb, var(--default-color), transparent 60%);
 font-size: 14px;
 }
+
+.social-share {
+  display: flex;
+  flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+  gap: 10px; /* Adds spacing between buttons */
+  align-items: center;
+}
+
+.social-share span {
+  font-size: 1rem;
+  margin-right: 10px;
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+}
+
+.social-share a {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; /* Space between the icon and text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.social-share a i {
+  font-size: 1.5rem; /* Adjust icon size */
+}
+
+.social-share a:hover {
+  opacity: 0.8; /* Adds a hover effect */
+}
+
+@media (max-width: 768px) {
+  .social-share {
+      flex-direction: column; /* Stacks the buttons vertically on small screens */
+      align-items: flex-start;
+  }
+
+  .social-share span {
+      margin-bottom: 10px; /* Adds spacing below the text on smaller screens */
+  }
+}
+
 
 
