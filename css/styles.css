@@ -6,7 +6,7 @@ html {
 body{
   background:rgb(247, 238, 238);
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 2em;
   
 }
  .container-fluid {
@@ -1221,7 +1221,11 @@ margin-bottom:3px;
   }
   body {
     font-size: 16px; /* Slightly smaller for tablets */
+    line-height: 2em;
  }
+ .footer {
+  font-size: 16px;
+}
  .f-contents .row{
   align-items:center;
   
@@ -1230,7 +1234,9 @@ margin-bottom:3px;
   font-size: 0.9rem; /* Slightly reduce font size for the email */
 }
 
- 
+ body{
+  width:100vw;
+ }
    
       
 
@@ -1311,9 +1317,9 @@ margin-bottom:3px;
       font-size:0.9em;
       width: 95%; /* Extra narrow text width on smallest screens */
     }
-    body {
+    /* body {
       font-size: 14px; /* Optimal for smaller screens */
-   }
+   } */
    .socials {
     font-size: 0.5em;
      
