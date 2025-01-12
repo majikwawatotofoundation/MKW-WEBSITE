@@ -26,91 +26,94 @@
     
   </head> 
   <body>
-   
-     <div class="header-background "> 
-      <nav class="navbar">
-        <div class="nav-elements container fluid">
-          <div class="button-wrapper">
-          
-            <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation" aria-label="Toggle navigation">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
+
+    <header class="container-fluid" id="header-contents">
+      <div class="header-background">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <div class="nav-elements container-fluid">
+            <div class="button-wrapper">
+              <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
               </button>
+            </div>
+            <div class="search-container">
+              <input type="text" id="search-input" class="search-input form-control me-2" placeholder="Search site...">
+              <button id="search-btn" class="search-btn">
+                <i class="bi bi-search"></i>
+              </button>
+              <button id="close-btn" class="close-btn">&times;</button>
+            </div>
+            <div id="navbar-content" class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="outreach.html">OUTREACH</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="impact.html"> OUR IMPACT</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="involved.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                    GET INVOLVED
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
+                    <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="blank">DONATE THROUGH OUR SPONSORS</a></li>
+                    <!-- <li><hr class="dropdown-divider"> </li> -->
+                    <li><a class="dropdown-item" href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
+                  </ul>
+                  
+                </li>
+                
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+                <li>
+                  
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                    AFFILIATES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
+                    <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
+                  </ul>
+                  
+                </li>
+                 
+                
+              </ul>
+              
+             </div>
           </div>
-          <div class="search-container" >
-            <input type="text" id="search-input" class="search-input form-control me-2" placeholder="Search site...">
-            <button id="search-btn" class="search-btn">
-              <i class="bi bi-search"></i>
-            </button>
-            <button id="close-btn" class="close-btn">&times;</button>
-          </div> 
-        
-          
-          <div id="navbar-content" class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="outreach.html">OUTREACH</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="impact.html"> OUR IMPACT</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
-                  GET INVOLVED
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
-                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="blank">DONATE THROUGH OUR SPONSORS</a></li>
-                  <!-- <li><hr class="dropdown-divider"> </li> -->
-                  <li><a class="dropdown-item" href="volunteer.html">VOLUNTEER</a></li>
-                  <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
-                </ul>
-                
-              </li>
-              
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li> -->
-              <li>
-                
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
-                  AFFILIATES
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
-                  <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
-                </ul>
-                
-              </li>
-               
-              
-            </ul>
-            
-           </div>
-        </div><!---end of nav-elements-->
-       
-         
-        
         </nav>
-        
-      <a href="index.html" class="watoto-logo" >
-          <img src="photos/logo-maji-kwa-watoto.png">
-          </a>
-          <div class="watoto-banner slow-load banner-placeholder">
-            <img class="image-background" data-src="photos/thirsty-littleangle-maji-kwa-watoto-foundation.png">
-          </div>
-          
-            <div class="back-links"><a href="index.html"><h4> Home</h4></a> 
-              <h4>The difference</h4></div>   
-    </div> <!--END OF NAVBAR AND VIDEO BACKGROUND-->
-    <div class="team-text container-fluid"> <p>Since its founding, MKW has supplied over 8 million litres of purified drinking water to schools and community centres, benefiting more than 32,000 children across 55 institutions. Access to safe drinking water has transformed these schools by reducing absenteeism due to water-borne illnesses, creating healthier learning environments and fostering educational success.
-      The journey hasn’t been without challenges; for instance, some deserving schools lack water storage tanks, limiting our reach. However, thanks to Stichting Waterpas and the Wild Geese Foundation’s support, MKW was able to overcome logistical obstacles with the acquisition of a specialized 10,000-liter truck, enabling us to transport water more effectively. MKW remains dedicated to expanding our impact, reaching new institutions, and overcoming challenges that stand between children and their right to clean water.
+    
+        <!-- Header Content -->
+        <a href="index.html" class="watoto-logo">
+          <img src="photos/logo-maji-kwa-watoto.png" alt="Logo">
+        </a>
+        <div class="watoto-banner">
+          <img class="image-background" src="photos/thirsty-littleangle-maji-kwa-watoto-foundation.png" alt="Banner Image">
+        </div>
+        <div class="back-links">
+          <a href="index.html"><h4>Home</h4></a>
+          <a href="#content"><h4>The Difference</h4></a>
+        </div>
+      </div>
+    </header>
+    
+
+
+
+    <div class="team-text container-fluid" id="content"> <p>Since its founding, MKW has supplied over <span > <strong>8 million litres </strong></span>  of purified drinking water to schools and community centres, benefiting more than <span > <strong>32,000 children across 62 institutions. </strong></span>   Access to safe drinking water has transformed these schools by reducing absenteeism due to water-borne illnesses, creating healthier learning environments and fostering educational success.
+      The journey hasn’t been without challenges; for instance, some deserving schools lack water storage tanks, limiting our reach. However, thanks to Stichting Waterpas and the Wild Geese Foundation’s support, MKW was able to overcome logistical obstacles with the acquisition of a specialized <span > <strong>10,000-liter truck </strong></span>   , enabling us to transport water more effectively. MKW remains dedicated to expanding our impact, reaching new institutions, and overcoming challenges that stand between children and their right to clean water.
       
       </p></div>
 
@@ -199,11 +202,11 @@
                   <h3 class="widget-heading">Recent Posts</h3>
                   <ul class="list-unstyled footer-blog-entry">
                     <li>
-                      <span class="d-block date">Jan 6, 2024</span>
+                      <span class="d-block date">Jan 6, 2025</span>
                       <a href="back-to-school-article.html">The long holiday has come to an end come to an end, and it’s time to dust off those books!</a>
                     </li>
                     <li>
-                      <span class="d-block date">Jan 6, 2024</span>
+                      <span class="d-block date">Jan 6, 2025</span>
                       <a href="a-hot-coastline.html">The year has begun with plenty of sunshine along Kenya’s coastline, and the grass..</a>
                     </li>
                   </ul>
@@ -261,6 +264,9 @@
 <script src="js/subscribe.js"></script>
 <script src="js/lazy-loading.js"></script>
 <script src="js/slowbanner.js"></script>
+<script src="js/observing-header-and-animated.js"></script>
+<script src="js/counter.js"></script>
+
 
 </body>
 </html>

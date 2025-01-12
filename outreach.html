@@ -27,63 +27,91 @@
   </head> 
   <body>
    
-    <div class="banner-background">
-      <!-- Logo in the top-left -->
-      <a href="index.html" class="watoto-logo">
-        <img src="photos/logo-maji-kwa-watoto.png" alt="Logo">
-      </a>
+    <header class="container-fluid" id="header-contents">
+      <div class="header-background">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <div class="nav-elements container-fluid">
+            <div class="button-wrapper">
+              <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
+            </div>
+            <div class="search-container">
+              <input type="text" id="search-input" class="search-input form-control me-2" placeholder="Search site...">
+              <button id="search-btn" class="search-btn">
+                <i class="bi bi-search"></i>
+              </button>
+              <button id="close-btn" class="close-btn">&times;</button>
+            </div>
+            <div id="navbar-content" class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="outreach.html">OUTREACH</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="impact.html"> OUR IMPACT</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="involved.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                    GET INVOLVED
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
+                    <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="blank">DONATE THROUGH OUR SPONSORS</a></li>
+                    <!-- <li><hr class="dropdown-divider"> </li> -->
+                    <li><a class="dropdown-item" href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
+                  </ul>
+                  
+                </li>
+                
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+                <li>
+                  
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                    AFFILIATES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
+                    <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
+                  </ul>
+                  
+                </li>
+                 
+                
+              </ul>
+              
+             </div>
+          </div>
+        </nav>
     
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="container-fluid nav-elements">
-          <div class="button-wrapper">
-            <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="outreach.html">OUTREACH</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="impact.html">OUR IMPACT</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">GET INVOLVED</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
-                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">DONATE THROUGH OUR SPONSORS</a></li>
-                  <li><a class="dropdown-item" href="#">VOLUNTEER</a></li>
-                  <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">AFFILIATES</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
-                  <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+        <!-- Header Content -->
+        <a href="index.html" class="watoto-logo">
+          <img src="photos/logo-maji-kwa-watoto.png" alt="Logo">
+        </a>
+        <div class="watoto-banner">
+          <img class="image-background" src="photos/thirsty-littleangle-maji-kwa-watoto-foundation.png" alt="Banner Image">
         </div>
-      </nav>
-    
-      <!-- Banner Image -->
-      <div class="watoto-banner">
-        <img class="image-background" data-src="photos/thirsty-littleangle-maji-kwa-watoto-foundation.png" alt="Banner">
+        <div class="back-links">
+          <a href="index.html"><h4>Home</h4></a>
+          <a href="#content"><h4>Our work</h4></a>
+        </div>
       </div>
-    </div>
+    </header>
     
      <!--END OF NAVBAR AND VIDEO BACKGROUND-->
     <!-- <div class="container-fluid"> -->
-      <div class="team-text container-fluid"> <p>At Maji Kwa Watoto (MKW) Foundation, we actively engage with schools, orphanages, and centres across Kenya’s coastal region to provide life-changing access to safe drinking water. Institutions typically apply through an official letter or email, but we also receive referrals from community members who are familiar with MKW's work. Upon receiving an application or referral, MKW performs a needs analysis to assess the number of beneficiaries, the required water volume, and the availability of storage tanks. If a tank is missing, some institutions are unable to receive water, highlighting a significant area of need in our outreach efforts.
+      <div class="team-text container-fluid" id="content"> <p>At Maji Kwa Watoto (MKW) Foundation, we actively engage with schools, orphanages, and centres across Kenya’s coastal region to provide life-changing access to safe drinking water. Institutions typically apply through an official letter or email, but we also receive referrals from community members who are familiar with MKW's work. Upon receiving an application or referral, MKW performs a needs analysis to assess the number of beneficiaries, the required water volume, and the availability of storage tanks. If a tank is missing, some institutions are unable to receive water, highlighting a significant area of need in our outreach efforts.
         Through partnerships with Dutch Water Ltd and local government agencies, MKW also provides education on hygiene, environmental care, and children’s rights, helping to build healthier communities. This outreach program is fully funded by our sponsors, Stichting Waterpas Foundation in the Netherlands.
         </p></div>
         <div class="row"> <!---THIS PICS WILL BE LOADED LAST FROM A JSON TO REDUCE THE LOAD TIME-->
@@ -167,11 +195,11 @@
                     <h3 class="widget-heading">Recent Posts</h3>
                     <ul class="list-unstyled footer-blog-entry">
                       <li>
-                        <span class="d-block date">Jan 6, 2024</span>
+                        <span class="d-block date">Jan 6, 2025</span>
                         <a href="back-to-school-article.html">The long holiday has come to an end come to an end, and it’s time to dust off those books!</a>
                       </li>
                       <li>
-                        <span class="d-block date">Jan 6, 2024</span>
+                        <span class="d-block date">Jan 6, 2025</span>
                         <a href="a-hot-coastline.html">The year has begun with plenty of sunshine along Kenya’s coastline, and the grass..</a>
                       </li>
                     </ul>
@@ -228,6 +256,7 @@
 <script src="js/subscribe.js"></script>
 <script src="js/lazy-loading.js"></script>
 <script src="js/slowbanner.js"></script>
+<script src="js/observing-header-and-animated.js"></script>
 </body>
 </html>
 <!-- <P>

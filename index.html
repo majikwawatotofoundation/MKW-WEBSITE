@@ -26,7 +26,7 @@
   </head> 
   <body>
    
-     <div class="video-background container-fluid"> 
+     <header   class="video-background container-fluid"> 
       <nav class="navbar">
         <div class="nav-elements container-fluid">
           <div class="button-wrapper">
@@ -105,42 +105,76 @@
             <img class="lazy-image" src="photos/video- placeholder-maji-kwa-watoto-fondation.png" data-src="photos/thirsty-littleangle-maji-kwa-watoto-foundation.png" alt="Video fallback image">
             <video type="video/mp4" class="watoto-video" src="videos/verythirsty-littleangel-maji-kwa-watoto-foundation-video.webm" autoplay muted loop playsinline></video>
          
-        <div class="video-text"><h1>Bringing Life and Hope to Our Children</h1> <br>
-       <p>Delivering healthy drinking water to brighten children's smiles and secure their future</p></div> 
-       </div> <!--END OF NAVBAR AND VIDEO BACKGROUND-->
+        <div class="video-text "><h1 class="animated drop-down">Bringing Life and Hope to Our Children</h1> <br>
+       <p class="animated drop-up">Delivering healthy drinking water to brighten children's smiles and secure their future</p></div> 
+
+       <div id="scroll-down" class="scroll-down">
+        <a href="#tiles">
+          <i class="bi bi-arrow-down-circle"></i>
+        </a>
+      </div>
+      
+       </header> <!--END OF NAVBAR AND VIDEO BACKGROUND-->
           
 
      <!-- <div class="container-fluid">  -->
       
       <!-- <div class="container-fluid">  -->
       
-        <div class="foundation-face-tiles row mt-3 justify-content-between">
+        <section class="foundation-face-tiles row mt-3 justify-content-between container-fluid" id="tiles">
           <div class="  outreach-tile col-md-4 ">
             <div class="shimmer slow-load">
               <img alt="Outreach" class="tile-image load" data-src="photos/outreach-to-schools-maji-kwa-watoto-foundation.jpeg">
             </div>
             
     
-            <h2>OUTREACH</h2>
+            <h2 class="animated go-up">OUTREACH</h2>
             <a href="outreach.html"><p>Discover Our Work</p></a>
           </div>
           <div class=" impact-tile col-md-4">
             <div class="shimmer slow-load"><img data-src="photos/purely-dutch-maji-kwa-watoto-foundation.jpg" alt="Our Impact" class="tile-image"></div>
             
-            <h2>OUR IMPACT</h2>
+            <h2 class="animated go-up">OUR IMPACT</h2>
             <a href="impact.html"><p>See the Difference</p></a>
             
           </div>
           <div class=" involved-tile col-md-4">
             <div class="shimmer slow-load"><img data-src="photos/nlvisitor-with-children-maji-kwa-watoto-foundation.jpeg" alt="Get Involved" class="tile-image"></div>
             
-            <h2>GET INVOLVED</h2>
+            <h2 class="animated go-up">GET INVOLVED</h2>
             <a href="involved.html"><p>Join Us Today</p></a>
             
           </div>
   
-        </div> <!---end of face tiles-->
-      <div class="d-flex justify-content-center align-items-center mt-3 happening-next-wrp">
+        </section> <!---end of face tiles-->
+
+        <section class="impact-section container-fluid text-center">
+          <h2 class="impact-heading">Our Achievements</h2>
+          <div class="row">
+            <div class="stats col-lg-3 col-md-6 mb-4">
+              <h3><span class="counter" data-target="350000">0</span>+</h3>
+              <p>Young Lives Touched</p>
+            </div>
+            <div class="stats col-lg-3 col-md-6 mb-4">
+              <h3><span class="counter" data-target="62">0</span></h3>
+              <p>Educational Institutions Assisted</p>
+            </div>
+            <div class="stats col-lg-3 col-md-6 mb-4">
+              <h3><span class="counter" data-target="3">0</span></h3>
+              <p>Counties Reached</p>
+            </div>
+            <div class="stats col-lg-3 col-md-6 mb-4">
+              <h3><span class="counter" data-target="8000000">0</span>+</h3>
+              <p>Liters of Water Delivered</p>
+            </div>
+          </div>
+        </section>
+        
+
+     
+        
+
+      <div class="d-flex justify-content-center align-items-center mt-3 happening-next-wrp container-fluid">
         <div class="heading-next"><h2>WHAT'S HAPPENING</h2></div> 
        </div>
         
@@ -172,7 +206,7 @@
           
         </div>
         <div class="short-update">
-          <p>At Maji Kwa Watoto, we’re celebrating the results of last year’s candidates in the 60 schools we supported with clean and reliable water. We’re proud to have played a role in their success by providing a fundamental resource for learning—water! Congratulations to all the students, teachers, and staff for their hard work and dedication. We’re inspired to do even more this year as we continue to make a difference through water.</p>
+          <p class="animated slide-up">At Maji Kwa Watoto, we’re celebrating the results of last year’s candidates in the 60 schools we supported with clean and reliable water. We’re proud to have played a role in their success by providing a fundamental resource for learning—water! Congratulations to all the students, teachers, and staff for their hard work and dedication. We’re inspired to do even more this year as we continue to make a difference through water.</p>
           <div class="read-more">
             <a href="student-performance.html">Read More</a>
           </div>
@@ -291,7 +325,7 @@
         </form>
         <div class="donate">
           <img src="photos/donate-maji-kwa-watoto-foundation.jpeg" alt="donate" class="donate-background">
-          <h2 >SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN </h2>
+          <h2 class="animated go-up">SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN </h2>
           <a href="involved.html" class="mkw"  ><h2>DONATE THROUGH US</h2></a>
           <div class="involved"><h2>DONATE THROUGH OUR PARTNER</h2></div>
           <div class="partners row"><!--WHEN WE GET MORE PATNERS I WILL PUT A CAROUSEL OF CLICKABLE PATRNERS LOGOS TO DONATION PAGES-->
@@ -406,5 +440,8 @@
     <script src="js/subscribe.js"></script>
     <script src="js/lazy-loading.js"></script>
     <script src="js/observer-media.js"></script>
+    <script src="js/observing-header-and-animated.js"></script>
+    <script src="js/counter.js"></script>
+
   </body>
 </html>

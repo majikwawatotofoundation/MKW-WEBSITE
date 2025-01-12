@@ -22,14 +22,6 @@ body{
   z-index:0;
 }
 
-.header-background{
-position:relative;
-z-index:1;
-width:100%;
-height:70vh;
-overflow:hidden;
-margin-bottom:3px;
-}
 
 /* Video or image background at the start of all webpage html*/
 .watoto-logo img {
@@ -44,187 +36,54 @@ margin-bottom:3px;
 }
 
 
-.watoto-video,.lazy-image{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  position:absolute;
-  top:0;
-  left:0;
-  object-fit: cover;
+/*--------------------------------------------------------------
+# Global Navbar styling
+--------------------------------------------------------------*/
 
-  transition: opacity 1s ease; /* Smooth fade-in for video */ 
-}
-.lazy-image {
-  z-index: 1; /* Place behind the video */
- 
-}
-.watoto-video {
-  z-index: 1; /* Video over fallback */
-  transition: opacity 1s ease; /* Smooth fade-in for video */
+ /* Updated Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 10; /* Keep it above all other elements */
+  display: flex;
+  padding: 10px 20px;
 }
 
+.navbar.absolute {
+  position: absolute; /* Change to absolute when the header is out of view */
+  top: 0;
+  left: 0;
+}
 
-
-
-.video-text{
-    position:absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color:white;
-    z-index: 1;
-    width:80%;
-    opacity:1;
-    opacity:1;
+.navbar.fixed {
+  position: fixed; /* Keep it fixed at the top when the header is in view */
+  top: 0;
+  left: 0;
 }
 
 
+.header-background {
+  position: relative; /* Parent for absolute positioning */
+  z-index: 1; /* Ensure it's below the navbar */
+  width: 100%;
+  height: 70vh; /* Set height of header */
+  overflow: hidden;
+  margin-bottom: 3px;
+}
 
-.watoto-banner img{
-  width:100%;
-  height:70vh;
-  object-fit: cover;
-  top:0;
-  left:0;
-  position:absolute;
-  display:flex;
+.image-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits the header */
 }
 .navbar-collapse {
   position: relative;
   z-index: 15; /* Ensure it's above other elements */
 }
 
-.banner-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 1;
-   /* Start as hidden for a smooth transition */
-  transition: opacity 1s ease; 
-  /* Smooth fade-out transition */
-  z-index:1;
-}
-@media (max-width: 768px) {
-  .header-background{
-    width:100%;
-    height:50vh;
-  }
-  .watoto-banner img{
-    width:100%;
-    height:50vh;
-  }
-  .banner-placeholder {
-    width: 100%;
-    height: 50vh;
-  }
-}
-
-/* .image-background{
- 
-} */
-.back-links{
-  position:absolute;
-  z-index:2;
-  width:100%;
-  height:100px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  top:65%;
-  gap: 80px; /* Space between the two items */
- 
-}
-.back-links h4{
-  margin:0;
-  color:white;
-  padding:20px;
-  text-decoration:none;
-  background-color: rgba(41, 117, 199, 0.6);
-}
-.back-links a h4{
-  background-color: rgba(0, 123, 255, 0.6);
-  color:white;
-}
-
-.back-links h4:hover{
-  text-decoration: solid;
-}
-.banner-heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centers the text */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2; /* Ensure the text appears above the image */
-}
-.banner-heading a{
-  text-decoration: none;
-}
-
-.banner-heading a h1 {
-  color: white; /* Text color */
-  background-color: rgba(41, 117, 199, 0.6);
-  padding: 20px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 2rem; /* Adjust font size as needed */
-  border-radius: 10px; /* Optional rounded corners */
-}
-/*--------------------------------------------------------------
-# Responsive Banner Heading
---------------------------------------------------------------*/
-@media only screen and (max-width: 768px) {
-
-  .banner-heading {
-    position: relative; /* Adjust for smaller screens */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-  }
-
-  .banner-heading a h1 {
-    font-size: 1.5rem; /* Smaller font size on tablet */
-    padding: 15px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-
-  .banner-heading {
-    top: 40%;
-    padding: 10px;
-  }
-
-  .banner-heading a h1 {
-    font-size: 1.2rem; /* Further reduced size on mobile */
-    padding: 10px;
-  }
-}
-
-
-
-
-
-
-.navbar {
-  position:relative;
-  display:flex;
-  z-index:3;
-}
-/* .nav-elements{
-  display: flex;
-  position:relative;
-  width:50vw;
-  height:auto;
-} */
 .button-wrapper{
   top:15px;
   right:15px;
@@ -385,6 +244,175 @@ margin-bottom:3px;
   display:block;
 }
 /* end of search button functionality*/
+
+/*--------------------------------------------------------------
+# End Global Navbar styling
+--------------------------------------------------------------*/
+
+
+.watoto-video,.lazy-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  top:0;
+  left:0;
+  object-fit: cover;
+
+  transition: opacity 1s ease; /* Smooth fade-in for video */ 
+}
+.lazy-image {
+  z-index: 1; /* Place behind the video */
+ 
+}
+.watoto-video {
+  z-index: 1; /* Video over fallback */
+  transition: opacity 1s ease; /* Smooth fade-in for video */
+}
+
+
+
+
+.video-text{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+    z-index: 1;
+    width:80%;
+    opacity:1;
+    opacity:1;
+}
+
+
+
+.watoto-banner img{
+  width:100%;
+  height:70vh;
+  object-fit: cover;
+  top:0;
+  left:0;
+  position:absolute;
+  display:flex;
+}
+
+
+.banner-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+   /* Start as hidden for a smooth transition */
+  transition: opacity 1s ease; 
+  /* Smooth fade-out transition */
+  z-index:1;
+}
+@media (max-width: 768px) {
+  .header-background{
+    width:100%;
+    height:50vh;
+  }
+  .watoto-banner img{
+    width:100%;
+    height:50vh;
+  }
+  .banner-placeholder {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+/* .image-background{
+ 
+} */
+.back-links{
+  position:absolute;
+  z-index:2;
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  top:65%;
+  gap: 80px; /* Space between the two items */
+ 
+}
+.back-links h4{
+  margin:0;
+  color:white;
+  padding:20px;
+  text-decoration:none;
+  background-color: rgba(41, 117, 199, 0.6);
+}
+.back-links a h4{
+  background-color: rgba(0, 123, 255, 0.6);
+  color:white;
+}
+
+.back-links h4:hover{
+  text-decoration: solid;
+}
+.banner-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Ensure the text appears above the image */
+}
+.banner-heading a{
+  text-decoration: none;
+}
+
+.banner-heading a h1 {
+  color: white; /* Text color */
+  background-color: rgba(41, 117, 199, 0.6);
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem; /* Adjust font size as needed */
+  border-radius: 10px; /* Optional rounded corners */
+}
+/*--------------------------------------------------------------
+# Responsive Banner Heading
+--------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+
+  .banner-heading {
+    position: relative; /* Adjust for smaller screens */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+  }
+
+  .banner-heading a h1 {
+    font-size: 1.5rem; /* Smaller font size on tablet */
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .banner-heading {
+    top: 40%;
+    padding: 10px;
+  }
+
+  .banner-heading a h1 {
+    font-size: 1.2rem; /* Further reduced size on mobile */
+    padding: 10px;
+  }
+}
+
+
 
 .tile-image {
   width: 100%;
@@ -1017,7 +1045,7 @@ margin-bottom:3px;
   .team-text {
     display:flex;
     flex-direction:column;
-    line-height:1.5;
+   
     padding:20px;
     /* font-size:14px; */
     
@@ -1380,12 +1408,51 @@ margin-bottom:3px;
   z-index:1001;
 }
 
+/* Style for the scroll-down arrow */
+.scroll-down {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px;  /* Distance from the right */
+  z-index: 20;
+  font-size: 2rem; /* Adjust the size of the arrow */
+  color: #007BFF; /* Default arrow color */
+}
+
+.scroll-down a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.scroll-down i {
+  display: inline-block; /* Ensures animation applies */
+  animation: bounce 2s infinite; /* Bouncing effect */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.scroll-down i:hover {
+  color: #0056b3; /* Darker blue when hovered */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Move up */
+  }
+  60% {
+    transform: translateY(-5px); /* Smaller bounce */
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
   /* background-color:;
   color:  */
+  container: fluid;
   padding: 60px 0;
   font-size: 18px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
@@ -2125,6 +2192,254 @@ font-size: 14px;
   font-size: 10px; /* Smaller font for tags */
 }
 
-/* Debugging navbar collPSE*
+/* Volunteer Form Styling */
+.volunteer-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #0078C8;
+}
+
+.volunteer-section p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.volunteer-section .form-group {
+  margin-bottom: 15px;
+}
+
+.volunteer-section input,
+.volunteer-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.volunteer-section textarea {
+  height: 100px;
+}
+
+.volunteer-section .submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #2fe3e4;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.become{
+  background-color: #2fe3e4;
+  color:#000000;
+}
+.become:hover{
+  background-color: white;
+  color:#0078C8;
+}
+
+
+.volunteer-section .submit-btn:hover {
+  background-color: #0078C8;
+}
+
+.volunteer-section .return-home {
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #0078C8;
+  font-size: 1.2rem;
+}
+
+.volunteer-section .return-home:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .volunteer-section {
+    padding: 15px;
+  }
+
+  .volunteer-section h2 {
+    font-size: 1.5rem;
+  }
+}
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+
+.animated {
+  opacity: 0;
+  /* transform: translateY(20px); */
+}
+.scrolled{
+  opacity:0;
+  transform:translateY(20px);
+  animation: scroll-in 3s forwards;
+}
+
+
+@keyframes scroll-in {
+  0%{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* For testing effects without JavaScript */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-100px); /* Start off-screen to the left */
+  animation: slide-in-left 2s ease forwards;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(100px); /* Start off-screen to the right */
+  animation: slide-in-right 2s ease forwards;
+}
+
+/* Keyframes for left slide */
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for right slide */
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade-in and scale-up animation */
+@keyframes fade-scale-up {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Slightly smaller */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Full size */
+  }
+}
+
+
+/* Class to apply animation */
+.fade-scale-up {
+  opacity: 0; /* Start hidden */
+  transform: scale(0.8); /* Initial size */
+  animation: fade-scale-up 1s ease forwards;
+}
+
+@keyframes drop-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Start slightly above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+}
+
+/* Class to apply drop-down animation */
+.drop-down {
+  opacity: 0; /* Start hidden */
+  transform: translateY(-50px); /* Initial position */
+  animation: drop-down 1s ease forwards;
+}
+
+@keyframes drop-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+}
+
+/* Class to apply drop-up animation */
+.drop-up {
+  opacity: 0; /* Start hidden */
+  transform: translateY(50px); /* Initial position */
+  animation: drop-up 1s ease forwards;
+}
+
+ /*--------------------------------------------------------------
+# About section maji  kwa watoto numbers
+--------------------------------------------------------------*/
+.impact-section {
+  padding: 40px 20px;
+}
+
+.impact-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+.stats h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 1rem;
+  color: #000; /* Black for text */
+}
+
+@media (max-width: 768px) {
+  .impact-heading {
+    font-size: 1.75rem;
+  }
+  .stats h3 {
+    font-size: 1.5rem;
+  }
+  .stats p {
+    font-size: 0.9rem;
+  }
+}
+
+
+ /*--------------------------------------------------------------
+# End of About section showing  maji kwa watoto numbers
+--------------------------------------------------------------*/
 
 

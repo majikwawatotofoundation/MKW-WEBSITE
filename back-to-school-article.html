@@ -252,32 +252,32 @@
           </section>
           <!-- /Blog Details Section -->
   
-          <!-- Comment Form Section -->
-          <section id="comment-form" class="comment-form section">
-            <div class="container">
-              <form id="commentForm">
-                <h4>Share Your Thoughts</h4>
-                <p>Your email address will not be published. Required fields are marked * </p>
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input name="name" type="text" class="form-control" placeholder="Your Name*" required>
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <input name="email" type="email" class="form-control" placeholder="Your Email*" required>
-                  </div>
+         <!-- Comment Form Section -->
+         <section id="comment-form" class="comment-form section">
+          <div class="container">
+            <form id="commentForm">
+              <h4>Share Your Thoughts</h4>
+              <p>Your email address will not be published. Required fields are marked * </p>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input id="name" name="name" type="text" class="form-control" placeholder="Your Name*" required>
                 </div>
-                <div class="row">
-                  <div class="col form-group">
-                    <textarea name="comment" class="form-control" placeholder="Your Comment*" required></textarea>
-                  </div>
+                <div class="col-md-6 form-group">
+                  <input id="email" name="email" type="email" class="form-control" placeholder="Your Email*" required>
                 </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+              <div class="row">
+                <div class="col form-group">
+                  <textarea id="comment" name="comment" class="form-control" placeholder="Your Comment*" required></textarea>
                 </div>
-              </form>
-            </div>
-          </section>
-          <!-- /Comment Form Section -->
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- /Comment Form Section -->
   
         </div>
         <!-- End Main Content -->
@@ -423,5 +423,8 @@
     <script src="js/subscribe.js"></script>
     <script src="js/lazy-loading.js"></script>
     <script src="js/observer-media.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/observing-header-and-animated.js"></script>
 </body>
 </html>
