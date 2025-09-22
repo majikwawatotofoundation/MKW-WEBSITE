@@ -1,298 +1,429 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+
+<head>
+
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Maji Kwa Watoto Foundation, based in Mtwapa near Mombasa, Kenya, provides clean water to schools, orphanages, and community centers, reducing water-borne diseases. In partnership with Dutch Water and long-term collaborators [Stichting Waterpas](https://www.stichtingwaterpas.nl/) in the Netherlands, we deliver safe drinking water, hygiene education, and vital support to vulnerable institutions across Mombasa and Mtwapa. Located upstairs in the Dutch Water Mtwapa Building, we are dedicated to empowering communities with sustainable water solutions and improving children's health and education. Join us to transform lives with clean water and lasting change!">
     <meta name="keywords" content="Kenya water foundation, Maji Kwa Watoto, clean water for schools, children's health, safe drinking water, water donations Kenya, hygiene education, community support, Stichting Waterpas, Dutch Water, Mtwapa water solutions, Maji Kwa Watoto Foundation Kenya, clean water for orphanages, sustainable water systems, waterborne disease prevention, water charity Kenya, stichting waterpas.org, clean water partnerships, Mtwapa clean water projects">
     
-    <meta name="robots" content="index, follow">
-    
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="shortcut icon" href="/favicon.ico">
+  <title>MKW - Maji Kwa Watoto Foundation</title>
+  <meta name="robots" content="index, follow">
+  <!-- Favicons -->
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Awesome and Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     
     <title>Maji Kwa Watoto Foundation</title> 
-  </head> 
-  <body>
-    <div class="header-background"> 
-      <nav class="navbar">
-        <div class="nav-elements container fluid">
-          <div class="button-wrapper">
-          
-            <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation" aria-label="Toggle navigation">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-              </button>
-          </div>
-          <div class="search-container" >
-            <input type="text" id="search-input" class="search-input form-control me-2" placeholder="Search site...">
-            <button id="search-btn" class="search-btn">
-              <i class="bi bi-search"></i>
-            </button>
-            <button id="close-btn" class="close-btn">&times;</button>
-          </div> 
-        
-          
-          <div id="navbar-content" class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="outreach.html">OUTREACH</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="impact.html"> OUR IMPACT</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
-                  GET INVOLVED
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="involved.html">DONATE THROUGH US</a></li>
-                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="blank">DONATE THROUGH OUR SPONSORS</a></li>
-                  <!-- <li><hr class="dropdown-divider"> </li> -->
-                  <li><a class="dropdown-item" href="volunteer.html">VOLUNTEER</a></li>
-                  <li><a class="dropdown-item" href="#">BECOME A PARTNER</a></li>
-                </ul>
-                
-              </li>
-              
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li> -->
-              <li>
-                
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
-                  AFFILIATES
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">STICHING WATERPAS</a></li>
-                  <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">NEW DUTCH WATER LIMITED</a></li>
-                </ul>
-                
-              </li>
-               
-              
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/styles.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+   <header id="header" class="header fixed-top">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="assets/img/highlights/logo-maji-kwa-watoto.png" alt="MKW Foundation Logo" class="logo-img">
+        <h1 class="sitename">MKW Foundation</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="outreach.html">Outreach</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="impact.html">Our Impact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="involved.html" id="getInvolvedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Get Involved
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="getInvolvedDropdown">
+              <li><a class="dropdown-item" href="involved.html#donations">Donate Through Us</a></li>
+              <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">Donate Through Our Sponsors</a></li>
+              <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Become a Partner</a></li> -->
             </ul>
-            
-           </div>
-        </div><!---end of nav-elements-->
-       
-         
-        
-        </nav>
-        
-      <a href="index.html" class="watoto-logo" >
-          <img src="photos/logo-maji-kwa-watoto.png">
-          </a>
-          <div class="watoto-banner slow-load banner-placeholder">
-            <img class="image-background" data-src="photos/thirsty-littleangle-maji-kwa-watoto-foundation.png">
-          </div>
-            <div class="back-links"><a href="index.html"><h4> Home</h4></a> 
-              <a href="#content"><h4>Welcome aboard!</h4></a></div>   
-    </div> <!--END OF NAVBAR AND VIDEO BACKGROUND-->
-    <div class="main-container container-fluid" id="content">
-      
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="affiliatesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Affiliates
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="affiliatesDropdown">
+              <li><a class="dropdown-item" href="https://www.stichtingwaterpas.nl/" target="_blank">Stichting Waterpas</a></li>
+              <li><a class="dropdown-item" href="https://dwlwater.com/" target="_blank">New Dutch Water Limited</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-            <div class="donate-here-container">
-                <form class="donate-here ">
-                    <h4>Your Message and Donation</h4> 
-                    <p>We invite you to share a personal message or comment along with your donation.
-                        Your support means a lot to us, and your words inspire our mission. 
-                        Rest assured, your personal details will be stored securely and never shared without your permission.</p>
-                    <div class="name-input"><input class="name-input1" type="text" placeholder="First Name*" >
-                        <input class="name-input2"type="text" placeholder="Last Name*" >
-                    </div>
-                    <div class="details-input">
-                        <input  class="email-input"  type="text" placeholder="Enter your Email adress*" >
-                        <input class="comment-input" type="text" placeholder="Leave a comment" >
-                    </div>
-                    <button class="send"   type="submit"><h4>SEND</h4></button></button>
-                    
-                    <div class="mpesa-donation"><h4> Donate via Mpesa</h4>
-                        <div class="m-donate"><img src="photos/mpesa-logo-maji-kwa-watoto-foundation.png" alt="mpesa-logo">
-                            <h5> MPESA PAYBILL: <br>
-                                Paybill Number: 552800 <br>
-                                Account Number: 300440
-                                
-                            </h5>
-                        </div>   
-                    </div>
-                    <div class="paypal-donation">
-                        <h4> Donate via Paypal</h4>
-                        <p>If you want to use a credit card or debit card, you can still donate using the PayPal button below. No PayPal account is required!</p>
-                        <div class="pal-donate">
-                            <a href="https://www.paypal.com/donate/?hosted_button_id=BUQCKW4QZLQSE" alt="paypal-link" target="_blank">
-                                <img src="photos/paypal-logo-maji-kwa-watoto.png" alt="paypal-logo"></a>
-                            <a href="https://www.paypal.com/donate/?hosted_button_id=BUQCKW4QZLQSE" alt="paypal-link" target="_blank">
-                                <h4 class="pal-donate"> Donate Now</h4></a>
-                        </div>
-                        
-                    </div>
-                    
-                </form>
-                
-                
-                    
-          
-            
-            </div><!-- end of donate here container-->
-            <div class="team-text justify-content-center align-items-center "> 
-              <p>Join us in making a difference! Whether through donations, <span><a href="volunteer.html">volunteering</a></span>, or spreading awareness, your support brings safe drinking water to more children.
-              </p>
-              <h5>Ways to Contribute:</h5>
-              <ul>
-                <li>
-                  <span class="list-icon"></span>
-                  <h6>Sponsor a Water Tank:</h6>
-                  <p>With a one-time donation, help provide essential water storage for schools that currently lack infrastructure.</p>
-                </li>
-                <li>
-                  <span class="list-icon"></span>
-                  <h6>Monthly Water Supplies: </h6>
-                  <p>Fund a portion of the Ksh 4-per-liter cost to ensure uninterrupted water access for schools and centres.</p>
-                </li>
-                <li>
-                  <span class="list-icon"></span>
-                  <h6>General Contributions:  </h6>
-                  <p> Donate through Stichting Waterpas Foundation or directly to MKW to support our ongoing efforts.</p>
-                </li>
-              </ul>
-              <p>You can also <span><a href="volunteer.html">volunteer</a></span> to help with community initiatives or environmental programs.</p>
-            </div>
-            
-
-    </div><!--END OF MAIN CONTAINER-->
-    <form class="subscribe-container mb-2">
-            
-      <h3> We send periodical Newsletters</h3>
-      <h5>Email adress*</h5>
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit"><p>Subscribe Now</p></button>
-    </form>
-    <div class="donate">
-      <img src="photos/donate-maji-kwa-watoto-foundation.jpeg" alt="donate" class="donate-background">
-      <h2 >SUPPORT OUR MISSION: HELP US BRING CLEAN WATER TO CHILDREN </h2>
-      <a href="involved.html" class="mkw"  ><h2>DONATE THROUGH US</h2></a>
-      <div class="involved"><h2>DONATE THROUGH OUR PARTNER</h2></div>
-      <div class="partners row"><!--WHEN WE GET MORE PATNERS I WILL PUT A CAROUSEL OF CLICKABLE PATRNERS LOGOS TO DONATION PAGES-->
-        <div class="thepartner mx-1 col-sm-12">
-          <a href="https://www.stichtingwaterpas.nl/" target="_blank" >
-          <img src="photos/waterpas-logo-maji-kwa-watoto-foundation.png" alt="stiching waterpas">
-          <p>Donate through our trusted partner</p></a>
-        </div><!--end of the partner-->
-       </div><!--end of partners row-->
-      </div> <!--end of donate-->
-           
-
-      <div class="wait-donation"><button id="back-to-top" aria-label="Back to Top">&#8679;</button></div>
-      
-
-      <footer id="footer" class="footer light-background">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
-              <div class="widget">
-                <h3 class="widget-heading">About Us</h3>
-                <p class="mb-4">
-                  We actively engage with schools, orphanages, and centres across Kenya’s coastal region to provide life-changing access to safe drinking water. Institutions typically...
-                </p>
-                <p class="mb-0">
-                  <a href="outreach.html" class="btn-learn-more">Learn more</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ps-lg-5 mb-3 mb-md-0">
-              <div class="widget">
-                <h3 class="widget-heading">Navigation</h3>
-                <ul class="list-unstyled float-start me-5">
-                  <!-- <li><a href="outreach.html">Outreach</a></li> -->
-                  <li><a href="impact.html">Impact</a></li>
-                  <li><a href="involved.html">Get involved</a></li>
-                </ul>
-                <ul class="list-unstyled float-start">
-                  <li><a href="volunteer.html">Volunteer</a></li>
-                   <li><a href="contact.html">Contact us</a></li>
-                  <!--<li><a href="#">Services</a></li> -->
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 pl-lg-5">
-              <div class="widget">
-                <h3 class="widget-heading">Recent Posts</h3>
-                <ul class="list-unstyled footer-blog-entry">
-                  <li>
-                    <span class="d-block date">Jan 6, 2025</span>
-                    <a href="back-to-school-article.html">The long holiday has come to an end come to an end, and it’s time to dust off those books!</a>
-                  </li>
-                  <li>
-                    <span class="d-block date">Jan 6, 2025</span>
-                    <a href="a-hot-coastline.html">The year has begun with plenty of sunshine along Kenya’s coastline, and the grass..</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 pl-lg-5">
-              <div class="widget">
-                <h3 class="widget-heading">Connect</h3>
-                <ul class="list-unstyled social-icons light mb-3">
-                  <li>
-                    <a href="https://web.facebook.com/profile.php?id=61568727069373&_rdc=1&_rdr#" target="_blank"><span class="bi bi-facebook"></span></a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/maji_kwa_watoto?t=e75nv-T0CuKIRmPWC4GfrA&s=09" target="_blank"><span class="bi bi-twitter-x"></span></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/company/105697083/admin/page-posts/published/" target="_blank"><span class="bi bi-linkedin"></span></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/majikwawatoto/"><span class="bi bi-instagram" target="_blank"></span></a>
-                  </li>
-                  <li>
-                    <a href="mailto:admin@majikwawatotofoundation.com"><span class="bi bi-envelope-fill" target="_blank"></span></a>
-                  </li>
-                </ul>
-              </div>
-    
-             
-              
-            </div>
-          </div>
-    
-          <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Maji Kwa Watoto Foundation</strong> <span>All Rights Reserved</span></p>
-            
-          </div>
+  <main class="main">
+     <!-- Inner Banner Section -->
+    <!-- Inner Banner Section -->
+        <section id="involved-banner" class="inner-banner section">
+        <div class="banner-bg" style="background-image: url('assets/img/banners/banners-maji-kwa-watoto-foundation (27).jpg');"></div>
+        <div class="banner-overlay"></div>
+        <div class="container text-center">
+            <h1>Get Involved</h1>
+            <p>Donate, volunteer, or spread the word — every action makes an impact.</p>
         </div>
-      </footer>
-     
-    
+        </section>
+
+        <section id="involved" class="involved section">
+            <!-- <div class="container section-title" data-aos="fade-up">
+                <h2>Get Involved</h2>
+                <p>Join us in bringing safe drinking water to Kenya’s coastal communities.</p>
+            </div> -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row align-items-center">
+                <!-- Donation Form -->
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                    <div class="involved-donate-form-card">
+                    <div class="form-header">
+                        <div class="header-icon">
+                        <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <h3>Your Message and Donation</h3>
+                        <p>Your support and words inspire our mission. Your details are secure and never shared.</p>
+                    </div>
+                    <form action="forms/donate.php" method="post" class="involved-donate-form">
+                        <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" name="first_name" class="form-control involved-name-first" placeholder="First Name*" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" name="last_name" class="form-control involved-name-last" placeholder="Last Name*" required>
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                        <input type="email" class="form-control involved-email" name="email" placeholder="Enter your Email address*" required>
+                        </div>
+                        <div class="mb-4">
+                        <textarea class="form-control involved-comment" name="comment" rows="4" placeholder="Leave a comment" required></textarea>
+                        </div>
+                        <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                        <span>Send</span>
+                        <i class="bi bi-send-fill"></i>
+                        </button>
+                    </form>
+                    </div>
+                </div>
+
+                <!-- Contribution and Donation Options -->
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="involved-contribute-area">
+                    <div class="info-header">
+                        <h3>Ways to Contribute</h3>
+                        <p>Your support brings safe drinking water to more children through donations, volunteering, or spreading awareness.</p>
+                    </div>
+
+                    <!-- Contribution List -->
+                    <div class="involved-contribute" data-aos="fade-up" data-aos-delay="300">
+                        <h4>Contribution Options</h4>
+                        <div class="row gy-3">
+                        <div class="col-md-6">
+                            <div class="contribute-item">
+                            <i class="bi bi-water flex-shrink-0"></i>
+                            <div>
+                                <h5>Sponsor a Water Tank</h5>
+                                <p>With a one-time donation, help provide essential water storage for schools that currently lack infrastructure.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contribute-item">
+                            <i class="bi bi-droplet-fill flex-shrink-0"></i>
+                            <div>
+                                <h5>Monthly Water Supplies</h5>
+                                <p>Fund a portion of the Ksh 4-per-liter cost to ensure uninterrupted water access for schools and centres.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contribute-item">
+                            <!-- <i class="bi bi-hand-holding-heart flex-shrink-0"></i> -->
+                             <i class="fa-solid fa-hand-holding-heart"></i>
+
+                            <div>
+                                <h5>General Contributions</h5>
+                                <p>Donate through Stichting Waterpas Foundation or directly to MKW to support our ongoing efforts.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contribute-item">
+                            <i class="bi bi-person-raised-hand flex-shrink-0"></i>
+                            <div>
+                                <h5>Volunteer</h5>
+                                <p><a href="volunteer.html">Join us</a> to help with community initiatives or environmental programs.</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Donation Methods -->
+                    <div id="donations" class="involved-donate-methods" data-aos="fade-up" data-aos-delay="400">
+                        <h4>Donate Now</h4>
+                        <div class="row gy-3">
+                        <div class="col-md-6">
+                            <div class="method-card">
+                            <div class="card-icon">
+                                <img src="assets/img/logos/mpesa2-logo-maji-kwa-watoto-foundation.png" alt="M-Pesa Logo" class="method-logo">
+                            </div>
+                            <div class="card-content">
+                                <h5>Donate via M-Pesa</h5>
+                                <p>Paybill Number: 552800<br>Account Number: 300440</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="method-card">
+                            <div class="card-icon">
+                                <img src="assets/img/logos/paypal-logo-maji-kwa-watoto.png" alt="PayPal Logo" class="method-logo">
+                            </div>
+                            <div class="card-content">
+                                <h5>Donate via PayPal</h5>
+                                <p><a href="https://www.paypal.com/donate/?hosted_button_id=BUQCKW4QZLQSE" target="_blank">Donate Now</a> using credit/debit card. No PayPal account required!</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+  
+        </section>
 
 
+       
+      
+
+       <!-- CTA Section -->
+        <section id="cta" class="cta section">
+        <div class="cta-overlay"></div>
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="cta-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="cta-header">
+                    <h2>Join Our Mission</h2>
+                    <p>Support clean water and vibrant communities with Maji Kwa Watoto Foundation.</p>
+                </div>
+
+                <div class="cta-content">
+                    <!-- Newsletter Subscription Form -->
+                    <form class="subscribe-form" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="form-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="form-content">
+                        <h3>We Send Periodic Newsletters</h3>
+                        <h5>Email Address*</h5>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    </div>
+                    </form>
+
+                    <!-- Donation CTAs -->
+                    <div class="donation-ctas" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="involved.html#donations" class="btn btn-primary">Donate Through Us</a>
+                    <a href="#" class="btn btn-outline">Donate Through Our Partners</a>
+                    </div>
+
+                    <!-- Branding Logos -->
+                    <div class="cta-branding" data-aos="fade-up" data-aos-delay="250">
+                    <img src="assets/img/logos/logo-maji-kwa-watoto.png" alt="Maji Kwa Watoto Logo" class="logo-mkw">
+                    <img src="assets/img/logos/waterpas-logo-maji-kwa-watoto-foundation.png" alt="Stitching Water Logo" class="logo-stitching">
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
 
 
+  </main>
 
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  <script src="js/Navbar & inpage functionalities.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+ <!-- Footer -->
+<footer id="footer" class="footer position-relative light-background" data-aos="fade-up" data-aos-delay="100">
+  <div class="footer-overlay"></div>
+  <div class="container footer-top" data-aos="fade-up" data-aos-delay="150">
+    <div class="row gy-4">
 
-  <script src="js/donate.js"></script> 
-  <script src="js/lazy-loading.js"></script>
-  <script src="js/slowbanner.js"></script>
-  <script src="js/observing-header-and-animated.js"></script>
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6 footer-about" data-aos="fade-up" data-aos-delay="200">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/highlights/logo-maji-kwa-watoto.png" alt="MKW Foundation Logo" class="me-2">
+        </a>
+        <span class="sitename">MKW Foundation</span>
+        <p class="mt-3">
+          We actively engage with schools, orphanages, and centres across Kenya’s coastal region to provide life-changing access to safe drinking water. Institutions typically...
+        </p>
+        <p class="mb-0">
+          <a href="outreach.html" class="btn-learn-more">Learn more</a>
+        </p>
+        <div class="social-links d-flex mt-4" data-aos="fade-up" data-aos-delay="250">
+          <a href="https://web.facebook.com/profile.php?id=61568727069373&_rdc=1&_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/maji_kwa_watoto?t=e75nv-T0CuKIRmPWC4GfrA&s=09" target="_blank"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.linkedin.com/company/105697083/admin/page-posts/published/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/majikwawatoto/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="mailto:admin@majikwawatotofoundation.com" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+      </div>
 
-  </body>
+      <!-- Useful Links -->
+      <div class="col-lg-2 col-md-3 footer-links" data-aos="fade-up" data-aos-delay="250">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+          <li><a href="impact.html">Our Impact</a></li>
+          <li><a href="involved.html">Get Involved</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+        </ul>
+      </div>
+
+      <!-- Affiliates -->
+      <div class="col-lg-2 col-md-3 footer-contact" data-aos="fade-up" data-aos-delay="300">
+        <h4>Affiliates</h4>
+        <ul>
+          <li><a href="https://www.stichtingwaterpas.nl/" target="_blank">Stichting Waterpas</a></li>
+          <li><a href="https://dwlwater.com/" target="_blank">New Dutch Water Limited</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="col-lg-2 col-md-3 footer-contact" data-aos="fade-up" data-aos-delay="350">
+        <h4>Contact Us</h4>
+        <div class="contact-methods">
+
+          <div class="method-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card-icon">
+              <i class="bi bi-envelope-at"></i>
+            </div>
+            <div class="card-content">
+              <h5>Email Us</h5>
+              <p>admin@majikwawatotofoundation.com</p>
+              <span class="response-time">Response in 2-4 hours</span>
+            </div>
+          </div>
+
+          <div class="method-card" data-aos="zoom-in" data-aos-delay="450">
+            <div class="card-icon">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div class="card-content">
+              <h5>Call Us</h5>
+              <p>+254 729 465138</p>
+              <span class="response-time">Available 7AM - 5PM EAT</span>
+            </div>
+          </div>
+
+          <div class="method-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="card-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div class="card-content">
+              <h5>Visit Our Office</h5>
+              <p>Mtwapa, Kenya</p>
+              <span class="response-time">Open Mon - Fri, 7AM onwards</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4" data-aos="fade-up" data-aos-delay="550">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">Maji Kwa Watoto Foundation</strong> <span>All Rights Reserved</span></p>
+  </div>
+</footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+<div id="preloader">
+  <div class="wave"></div>
+  <div class="drop"></div>
+</div>
+
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  <!--Email.js-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- AOS JS Files -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- PureCounter -->
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/swipers.js"></script>
+  <script src="assets/js/slow-loading.js"></script>
+  <script src="assets/js/subscribe.js"></script>
+  <script src="assets/js/donate.js"></script>
+</body>
+
 </html>
