@@ -128,31 +128,36 @@
                         <h3>Your Message and Donation</h3>
                         <p>Your support and words inspire our mission. Your details are secure and never shared.</p>
                     </div>
-                    <form action="forms/donate.php" method="post" class="involved-donate-form">
-                        <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <input type="text" name="first_name" class="form-control involved-name-first" placeholder="First Name*" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <input type="text" name="last_name" class="form-control involved-name-last" placeholder="Last Name*" required>
-                        </div>
-                        </div>
-                        <div class="mb-3">
-                        <input type="email" class="form-control involved-email" name="email" placeholder="Enter your Email address*" required>
-                        </div>
-                        <div class="mb-4">
-                        <textarea class="form-control involved-comment" name="comment" rows="4" placeholder="Leave a comment" required></textarea>
-                        </div>
-                        <div class="my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                        <span>Send</span>
-                        <i class="bi bi-send-fill"></i>
-                        </button>
-                    </form>
+                   <form id="donate-form" class="involved-donate-form">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <input type="text" name="first_name" class="form-control involved-name-first" placeholder="First Name*" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="text" name="last_name" class="form-control involved-name-last" placeholder="Last Name*" required>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control involved-email" name="email" placeholder="Enter your Email address*" required>
+                    </div>
+                    <div class="mb-4">
+                      <textarea class="form-control involved-comment" name="comment" rows="4" placeholder="Leave a comment" required></textarea>
+                    </div>
+
+                    <!-- Inline messages -->
+                    <div class="form-messages my-2">
+                      <div id="donate-loading" class="text-primary d-none">⏳ Sending...</div>
+                      <div id="donate-success" class="text-success d-none">✅ Thank you for your message and donation!</div>
+                      <div id="donate-error" class="text-danger d-none">❌ Failed to send. Please try again.</div>
+                    </div>
+
+                    <button type="submit" class="submit-btn btn btn-primary">
+                      <span class="btn-text">Send</span>
+                      <span class="btn-loading spinner-border spinner-border-sm d-none" role="status"></span>
+                      <i class="bi bi-send-fill"></i>
+                    </button>
+                  </form>
+
                     </div>
                 </div>
 
@@ -263,17 +268,22 @@
 
                 <div class="cta-content">
                     <!-- Newsletter Subscription Form -->
-                    <form class="subscribe-form" data-aos="zoom-in" data-aos-delay="150">
-                    <div class="form-icon">
-                        <i class="bi bi-envelope"></i>
-                    </div>
-                    <div class="form-content">
-                        <h3>We Send Periodic Newsletters</h3>
-                        <h5>Email Address*</h5>
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
-                    </div>
-                    </form>
+                  <!-- Newsletter Subscription Form -->
+                      <form id="subscribe-form" class="subscribe-form" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="form-icon">
+                          <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="form-content">
+                          <h3>We Send Periodic Newsletters</h3>
+                          <h5>Email Address*</h5>
+                          <input type="email" name="email" placeholder="Enter your email" required>
+                          <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Subscribe Now</span>
+                            <span class="btn-loading spinner-border spinner-border-sm d-none" role="status"></span>
+                          </button>
+                          <p id="subscribe-message" class="mt-2"></p>
+                        </div>
+                      </form>
 
                     <!-- Donation CTAs -->
                     <div class="donation-ctas" data-aos="zoom-in" data-aos-delay="200">

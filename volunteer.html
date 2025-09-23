@@ -127,26 +127,29 @@
                 <h3>Volunteer Application</h3>
                 <p>Your skills and passion can help bring safe drinking water to communities.</p>
             </div>
-            <form action="forms/volunteer.php" method="post" class="volunteer-form">
-                <div class="mb-3">
+            <form class="volunteer-form">
+              <div class="mb-3">
                 <input type="text" name="volunteer_name" class="form-control volunteer-name" placeholder="Full Name*" required>
-                </div>
-                <div class="mb-3">
+              </div>
+              <div class="mb-3">
                 <input type="email" name="volunteer_email" class="form-control volunteer-email" placeholder="Email Address*" required>
-                </div>
-                <div class="mb-4">
+              </div>
+              <div class="mb-4">
                 <textarea name="volunteer_message" class="form-control volunteer-message" rows="4" placeholder="Your Skills/Message" required></textarea>
-                </div>
-                <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your application has been sent. Thank you!</div>
-                </div>
-                <button type="submit" class="submit-btn">
+              </div>
+
+              <div class="my-3">
+                <div class="loading" style="display:none;">⏳ Sending your application...</div>
+                <div class="error-message" style="display:none; color:red;"></div>
+                <div class="sent-message" style="display:none; color:green;"></div>
+              </div>
+
+              <button type="submit" class="submit-btn">
                 <span>Submit</span>
                 <i class="bi bi-send-fill"></i>
-                </button>
+              </button>
             </form>
+
             </div>
         </div>
         </div>
@@ -172,17 +175,22 @@
 
                 <div class="cta-content">
                     <!-- Newsletter Subscription Form -->
-                    <form class="subscribe-form" data-aos="zoom-in" data-aos-delay="150">
+                 <!-- Newsletter Subscription Form -->
+                  <form id="subscribe-form" class="subscribe-form" data-aos="zoom-in" data-aos-delay="150">
                     <div class="form-icon">
-                        <i class="bi bi-envelope"></i>
+                      <i class="bi bi-envelope"></i>
                     </div>
                     <div class="form-content">
-                        <h3>We Send Periodic Newsletters</h3>
-                        <h5>Email Address*</h5>
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                      <h3>We Send Periodic Newsletters</h3>
+                      <h5>Email Address*</h5>
+                      <input type="email" name="email" placeholder="Enter your email" required>
+                      <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Subscribe Now</span>
+                        <span class="btn-loading spinner-border spinner-border-sm d-none" role="status"></span>
+                      </button>
+                      <p id="subscribe-message" class="mt-2"></p>
                     </div>
-                    </form>
+                  </form>
 
                     <!-- Donation CTAs -->
                     <div class="donation-ctas" data-aos="zoom-in" data-aos-delay="200">
